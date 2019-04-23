@@ -1,0 +1,25 @@
+#N canvas 636 77 1360 430 10;
+#X obj 304 186 r notesIn-\$1;
+#X obj 304 490 s notesOut-\$1;
+#X obj 25 186 inlet~ inL-\$1;
+#X obj 135 186 inlet~ inR-\$1;
+#X obj 27 491 outlet~ outL-\$1;
+#X obj 136 491 outlet~ outR-\$1;
+#X obj 487 182 r auxIn-\$1;
+#X obj 486 331 r expIn-\$1;
+#X obj 486 356 r fsIn-\$1;
+#X obj 271 331 notegen \$1;
+#X obj 293 275 triggen \$1;
+#X obj 260 385 midigen \$1;
+#X obj 251 221 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 464 215 r ng_midithru-\$1;
+#X obj 401 266 spigot 1;
+#X connect 0 0 10 0;
+#X connect 0 0 14 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 1 0;
+#X connect 12 0 9 0;
+#X connect 13 0 14 1;
+#X connect 14 0 1 0;
