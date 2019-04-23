@@ -1,5 +1,5 @@
 {
-    "name" : "U-notegen",
+    "name" : "Notegen",
     "display" : "NoteGen",
     "parameters" :  [ 
         ["int","ng_trigger","Midi Trigger",0,1,0],
