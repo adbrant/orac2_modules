@@ -9,7 +9,7 @@
 #X obj 474 185 r auxIn-\$1;
 #X obj 573 185 r expIn-\$1;
 #X obj 573 210 r fsIn-\$1;
-#N canvas 260 28 1151 729 sequencer 1;
+#N canvas 300 0 1151 729 sequencer 1;
 #X text 35 210 then play them!;
 #N canvas 348 144 533 494 countnotes 0;
 #X obj 103 259 > 0;
@@ -316,7 +316,7 @@ following elements over 1 place);
 #X connect 25 0 21 0;
 #X connect 26 0 23 0;
 #X restore 436 538 pd note-arrays;
-#N canvas 147 32 1100 729 arp 1;
+#N canvas 147 32 1100 729 arp 0;
 #X obj 244 886 outlet;
 #X obj 166 546 random;
 #X obj 166 449 spigot 0;
@@ -382,6 +382,8 @@ following elements over 1 place);
 #X obj 179 363 t b b;
 #X obj 450 414 t b b;
 #X obj 338 465 s resort-\$1;
+#X text 263 485 check if we need a re-sort before generating notes
+;
 #X connect 1 0 34 0;
 #X connect 2 0 5 0;
 #X connect 3 0 2 1;
