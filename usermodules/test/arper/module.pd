@@ -9,7 +9,7 @@
 #X obj 487 182 r auxIn-\$1;
 #X obj 486 331 r expIn-\$1;
 #X obj 486 356 r fsIn-\$1;
-#N canvas 106 16 1370 729 sequencer 1;
+#N canvas 539 37 1370 729 sequencer 1;
 #X obj 162 293 unpack 0 0;
 #X obj 162 353 pack 0 0 0;
 #X obj 162 414 unpack, f 54;
@@ -777,6 +777,8 @@ following elements over 1 place);
 #X obj 50 129 t b b;
 #X obj 104 123 t b b;
 #X obj 111 220 s resort-\$1;
+#X text 7 249 send a re-sort first to check if there have been note
+updates;
 #X connect 0 0 25 0;
 #X connect 1 0 4 0;
 #X connect 1 1 5 0;
@@ -972,6 +974,7 @@ in various patterns. This is the Module conversion of Arpeggio Synth.
 #X obj 83 553 t b b b b b, f 54;
 #X msg 76 594 0;
 #X obj 98 489 r resort-\$1;
+#X text 143 534 only re-sort once before we generate a new note;
 #X connect 0 0 8 0;
 #X connect 0 1 8 1;
 #X connect 1 0 9 0;
