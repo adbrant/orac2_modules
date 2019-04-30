@@ -1,7 +1,7 @@
 {
     "display" : "Drift",
     "parameters" :  [ 
-        ["S","l_rate","Speed",0,100,0],
+        ["float","l_rate","Speed",0,100,0],
         ["pct","l_min","Min",0,100,10],
         ["pct","l_max","Max",0,100,50],
         ["int","l_bus","Mod Bus",0,20,10]
