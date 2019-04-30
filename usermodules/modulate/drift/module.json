@@ -1,0 +1,13 @@
+{
+    "display" : "Drift",
+    "parameters" :  [ 
+        ["time","l_rate","Rate",0,100,0],
+        ["pct","l_max","Amount",0,100,10],
+        ["pct","l_min","Offset",0,100,50],
+        ["int","l_bus","Mod Bus",0,20,10]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["l_rate","l_max","l_min","l_bus"]],
+    ]
+}
+
