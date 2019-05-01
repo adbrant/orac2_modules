@@ -7,7 +7,7 @@
         ["int","l_bus","Mod Bus",0,20,10]
     ],
     "pages" : [ 
-        ["pg_main","Main",["l_rate","l_max","l_min","l_bus"]]
+        ["pg_main","Main",["l_rate","l_min","l_max","l_bus"]]
     ]
 }
 
