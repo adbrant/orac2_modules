@@ -5,8 +5,8 @@
         ["pct","r_min_1","Min",0,100,10],
         ["pct","r_max_1","Max",0,100,100],
         ["int","r_bus_1","Mod Bus",0,20,10],      
-        ["int","r_div","Beat Div.",1,4,1],
-        ["int","r_mul","Beat Mul.",1,64,1],
+        ["int","r_div","Division",1,4,1],
+        ["int","r_mul","Length",1,64,1],
         ["bool","r_on_2","Enable",0],
         ["pct","r_min_2","Min",0,100,10],
         ["pct","r_max_2","Max",0,100,100],
@@ -22,7 +22,7 @@
     ],
     "pages" : [ 
         ["pg_main","Mod 1",["r_on_1","r_min_1","r_max_1","r_bus_1"]],
-        ["pg_beat","Beat Div/Mul",["r_bus","r_div"]],
+        ["pg_beat","Beat Div/Len",["r_div","r_mul"]],
         ["pg_m2","Mod 2",["r_on_2","r_min_2","r_max_2","r_bus_2"]],
         ["pg_m3","Mod 3",["r_on_3","r_min_3","r_max_3","r_bus_3"]],
         ["pg_m4","Mod 4",["r_on_4","r_min_4","r_max_4","r_bus_4"]]
