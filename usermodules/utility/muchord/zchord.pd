@@ -13,7 +13,7 @@
 #X msg 458 367 1;
 #X obj 423 323 r sevenon;
 #X obj 400 345 r sevenoff;
-#N canvas -10 2 1360 699 chordlogic 0;
+#N canvas -10 2 1360 699 chordlogic 1;
 #X obj 205 172 % 12;
 #X obj 208 196 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
@@ -118,7 +118,7 @@ baroque7 jfunk mu;
 #X obj 613 658 + 0;
 #X obj 516 654 + 0;
 #X obj 572 659 + 0;
-#X obj 1059 638 s auxLabel-\$1;
+#X obj 1059 640 s aux-label-\$1;
 #X connect 0 0 1 0;
 #X connect 1 0 54 0;
 #X connect 7 0 17 1;
