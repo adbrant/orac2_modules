@@ -11,8 +11,7 @@
 #X obj 144 160 t f b;
 #X obj 125 18 inlet;
 #X obj 152 263 outlet;
-#X obj 236 27 inlet;
-#X obj 224 61 pipe 10;
+#X obj 232 28 inlet;
 #X text 303 45 delay here to prevent excessive CPU usage on notedown
 ;
 #X connect 0 0 4 0;
@@ -27,5 +26,4 @@
 #X connect 7 0 0 1;
 #X connect 7 1 0 0;
 #X connect 8 0 6 1;
-#X connect 10 0 11 0;
-#X connect 11 0 2 0;
+#X connect 10 0 2 0;
