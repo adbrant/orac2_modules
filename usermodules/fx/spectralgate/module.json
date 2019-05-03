@@ -1,0 +1,13 @@
+{
+    "display" : "Spectral Gate",
+    "parameters" :  [ 
+        ["pct","sg_thresh","Threshold",0,100,50],
+        ["pct","sg_attack","Attack",0,100,50],
+        ["pct","sg_decay","Decay",0,100,50],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["sg_thresh","sg_attack","sg_decay"]]
+    ]
+}
+
