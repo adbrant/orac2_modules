@@ -1,4 +1,4 @@
-#N canvas 18 2 1370 729 10;
+#N canvas 4 50 1358 659 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 671 s notesOut-\$1;
 #X obj 25 186 inlet~ inL-\$1;
@@ -10,7 +10,7 @@
 #X obj 423 233 r fsIn-\$1;
 #X obj 511 194 r ctrlIn-\$1;
 #X obj 511 220 s ctrlOut-\$1;
-#N canvas -8 -8 1366 725 fft-analysis 1;
+#N canvas 4 50 1358 659 fft-analysis 1;
 #X obj 35 589 *~;
 #X obj 35 72 *~;
 #X obj 90 427 *~;
@@ -27,7 +27,7 @@
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array gate-\$1 1024 float 2;
 #X coords 0 1 1024 0 200 140 1 0 0;
-#X restore 678 30 graph;
+#X restore 608 34 graph;
 #X obj 136 417 min~ 1;
 #X obj 210 242 abs~;
 #X obj 314 263 abs~;
@@ -46,7 +46,7 @@
 #X obj 323 548 tabsend~ gate-\$1;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array \$0-hann 1024 float 1;
-#A 0 0 1.88351e-005 3.76403e-005 9.41157e-005 0.000150591 0.000244677
+#A 0 0 1.88351e-05 3.76403e-05 9.41157e-05 0.000150591 0.000244677
 0.000338793 0.000470519 0.000602275 0.000771612 0.000940949 0.00114787
 0.00135478 0.00159925 0.00184369 0.00212568 0.00240764 0.00272709 0.00304651
 0.00340337 0.00376022 0.00415444 0.00454867 0.00498021 0.00541174 0.00588053
@@ -178,7 +178,7 @@
 #A 1000 0.00541082 0.00497931 0.00454783 0.00415364 0.00375944 0.00340265
 0.00304583 0.00272644 0.00240701 0.00212508 0.00184315 0.00159872 0.00135431
 0.00114745 0.000940561 0.000771254 0.000601947 0.000470281 0.000338584
-0.000244498 0.000150442 9.39965e-005 3.75807e-005 1.87755e-005;
+0.000244498 0.000150442 9.39965e-05 3.75807e-05 1.87755e-05;
 #X coords 0 1 1023 0 300 100 1 0 0;
 #X restore 1024 314 graph;
 #X obj 367 76 r sg_thresh-\$1;
@@ -258,26 +258,34 @@
 #X coords 0 1024 1023 0 300 100 1 0 0;
 #X restore 690 215 graph;
 #N canvas 0 50 450 250 (subpatch) 0;
-#X array gate-\$1 1024 float 2;
-#X coords 0 1 1024 0 200 140 1 0 0;
-#X restore 941 46 graph;
+#X array real-\$1 1024 float 2;
+#X coords 0 10 1024 -10 200 140 1 0 0;
+#X restore 897 48 graph;
 #X obj 810 415 tabreceive~ \$0-ramp;
-#X obj 823 519 tabread4~ amp-\$1;
-#X obj 823 455 *~ 1;
-#X obj 123 288 tabsend~ amp-\$1;
-#X obj 817 364 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+#X obj 704 371 *~ 1;
+#X obj 817 364 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 3 256;
 #X obj 1027 572 t f f;
 #X obj 1022 612 tabwrite \$0-ramp;
 #X obj 994 474 until, f 18;
 #X obj 1018 538 + 1;
 #X obj 980 544 f 0;
 #X msg 1014 439 1024;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array imag-\$1 1024 float 2;
+#X coords 0 10 1024 -10 200 140 1 0 0;
+#X restore 1118 75 graph;
+#X obj 36 502 tabsend~ real-\$1;
+#X obj 110 472 tabsend~ imag-\$1;
+#X obj 642 448 tabread4~ real-\$1;
+#X obj 754 542 tabread4~ imag-\$1;
 #X connect 0 0 7 0;
 #X connect 1 0 5 0;
 #X connect 2 0 6 1;
+#X connect 2 0 56 0;
 #X connect 3 0 1 0;
 #X connect 4 0 6 0;
+#X connect 4 0 55 0;
 #X connect 5 0 4 0;
 #X connect 5 0 15 0;
 #X connect 5 1 2 0;
@@ -289,9 +297,7 @@
 #X connect 14 0 4 1;
 #X connect 14 0 29 0;
 #X connect 15 0 18 0;
-#X connect 15 0 48 0;
 #X connect 16 0 18 0;
-#X connect 16 0 48 0;
 #X connect 17 0 21 0;
 #X connect 18 0 19 0;
 #X connect 19 0 22 0;
@@ -320,18 +326,19 @@
 #X connect 40 1 41 1;
 #X connect 41 0 39 0;
 #X connect 42 0 22 1;
-#X connect 45 0 47 0;
-#X connect 46 0 6 1;
-#X connect 46 0 6 0;
-#X connect 47 0 46 0;
-#X connect 49 0 47 1;
-#X connect 50 0 51 0;
-#X connect 50 1 51 1;
-#X connect 52 0 54 0;
-#X connect 53 0 54 1;
-#X connect 54 0 53 0;
-#X connect 54 0 50 0;
-#X connect 55 0 52 0;
+#X connect 45 0 46 0;
+#X connect 46 0 57 0;
+#X connect 46 0 58 0;
+#X connect 47 0 46 1;
+#X connect 48 0 49 0;
+#X connect 48 1 49 1;
+#X connect 50 0 52 0;
+#X connect 51 0 52 1;
+#X connect 52 0 51 0;
+#X connect 52 0 48 0;
+#X connect 53 0 50 0;
+#X connect 57 0 6 0;
+#X connect 58 0 6 1;
 #X restore 616 464 pd fft-analysis;
 #X obj 602 340 +~;
 #X obj 604 369 *~ 0.5;
