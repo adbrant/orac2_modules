@@ -23,7 +23,7 @@
         ["float","fmod_depth","Filtmod. Depth",0,1,0],
         ["float","noise","Noise",0,1,0],
         ["int","tune","Fine Tune",-100,100,0],
-        ["int","volume","Volume",0,100,70],
+        ["int","volume","Volume",0,100,70]
 
     ],
     "pages" : [ 
