@@ -21,7 +21,7 @@
         ["float","vibrato_depth","Vib. Depth",0,10,0],
         ["float","tremolo_depth","Trem. Depth",0,1,0],
         ["float","fmod_depth","Filtmod. Depth",0,1,0],
-        ["float","noise","Noise",0,1,0],
+        ["float","noise","Noise",0,100,0],
         ["int","tune","Fine Tune",-100,100,0],
         ["int","volume","Volume",0,100,70]
 
@@ -32,7 +32,7 @@
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
         ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
-        ["pg_mod","Misc",["envpitch","noise"]]
+        ["pg_misc","Misc",["envpitch","noise"]]
     ]
 }
 
