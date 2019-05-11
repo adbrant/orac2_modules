@@ -1,0 +1,8 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 382 142 r ctrlIn-\$1;
+#X obj 388 210 unpack 0 0 0;
+#X obj 388 231 sel 123;
+#X msg 388 252 stop;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;

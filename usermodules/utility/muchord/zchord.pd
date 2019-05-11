@@ -13,7 +13,7 @@
 #X msg 458 367 1;
 #X obj 423 323 r sevenon;
 #X obj 400 345 r sevenoff;
-#N canvas -10 2 1360 699 chordlogic 1;
+#N canvas -10 2 1360 699 chordlogic 0;
 #X obj 205 172 % 12;
 #X obj 208 196 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
@@ -224,6 +224,10 @@ baroque7 jfunk mu;
 #X obj 205 130 unpack 0 0;
 #X obj 249 178 f;
 #X obj 201 176 t b f;
+#X obj 388 182 r ctrlIn-\$1;
+#X obj 388 210 unpack 0 0 0;
+#X obj 388 231 sel 123;
+#X msg 388 252 stop;
 #X connect 2 0 3 0;
 #X connect 3 1 12 0;
 #X connect 3 2 4 1;
@@ -265,3 +269,7 @@ baroque7 jfunk mu;
 #X connect 33 0 25 1;
 #X connect 34 0 33 0;
 #X connect 34 1 2 0;
+#X connect 35 0 36 0;
+#X connect 36 0 37 0;
+#X connect 37 0 38 0;
+#X connect 38 0 13 1;
