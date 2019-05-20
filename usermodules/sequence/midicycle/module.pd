@@ -1,4 +1,4 @@
-#N canvas 37 187 1358 608 10;
+#N canvas -21 42 1358 608 10;
 #X obj 215 129 r notesIn-\$1;
 #X obj 304 490 s notesOut-\$1;
 #X obj 25 186 inlet~ inL-\$1;
@@ -32,6 +32,9 @@
 #X obj 422 69 sel 1;
 #X obj 41 311 r mc_overdub-\$1;
 #X msg 110 374 overdub \$1;
+#X obj 559 413 s aux-label-\$1;
+#X msg 576 350 Looping \$1;
+#X msg 681 362 Recording;
 #X connect 0 0 24 0;
 #X connect 0 0 1 0;
 #X connect 6 0 27 0;
@@ -42,6 +45,7 @@
 #X connect 12 0 13 0;
 #X connect 13 0 9 0;
 #X connect 14 0 16 0;
+#X connect 14 0 31 0;
 #X connect 15 0 14 1;
 #X connect 16 0 9 0;
 #X connect 17 0 9 0;
@@ -50,6 +54,7 @@
 #X connect 21 0 14 0;
 #X connect 21 1 22 0;
 #X connect 22 0 17 0;
+#X connect 22 0 32 0;
 #X connect 23 0 20 0;
 #X connect 24 0 9 0;
 #X connect 25 0 26 0;
@@ -57,3 +62,5 @@
 #X connect 27 0 20 0;
 #X connect 28 0 29 0;
 #X connect 29 0 9 0;
+#X connect 31 0 30 0;
+#X connect 32 0 30 0;
