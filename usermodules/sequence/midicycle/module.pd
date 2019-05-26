@@ -15,25 +15,25 @@
 #X msg 190 306 quantize \$1;
 #X obj 414 205 f 4;
 #X obj 463 173 r mc_beats-\$1;
-#X msg 422 239 loop \$1;
+#X msg 375 249 loop \$1;
 #X msg 297 193 loop 0;
 #X obj 494 87;
 #X obj 340 109 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 316 67 t b b;
-#X obj 385 129 sel 1;
+#X obj 380 96 sel 1;
 #X obj 337 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 294 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 289 239 note \$1 \$2;
 #X obj 600 116 r master-ticks;
-#X msg 530 270 tick \$1;
+#X msg 529 238 tick \$1;
 #X obj 422 69 sel 1;
 #X obj 41 311 r mc_overdub-\$1;
 #X msg 110 374 overdub \$1;
-#X obj 559 413 s aux-label-\$1;
-#X msg 576 350 Looping \$1;
+#X obj 542 517 s aux-label-\$1;
+#X msg 406 379 Looping \$1;
 #X msg 681 362 Recording;
 #X obj 797 254 t b l;
 #X obj 796 175 list;
@@ -116,10 +116,6 @@
 #X restore 1032 146 pd savePreset;
 #X msg 685 282 load \$1/presets/\$2/\$3-midicyle.bin;
 #X msg 1064 334 save \$1/presets/\$2/\$3-midicyle.bin;
-#X obj 820 501 s aux-led-\$1;
-#X obj 833 409 sel 0 12;
-#X msg 810 447 5, f 1;
-#X msg 845 457 0, f 5;
 #X connect 0 0 24 0;
 #X connect 0 0 1 0;
 #X connect 6 0 27 0;
@@ -143,8 +139,6 @@
 #X connect 23 0 20 0;
 #X connect 24 0 9 0;
 #X connect 25 0 26 0;
-#X connect 25 0 31 0;
-#X connect 25 0 41 0;
 #X connect 26 0 9 0;
 #X connect 27 0 20 0;
 #X connect 28 0 29 0;
@@ -160,7 +154,3 @@
 #X connect 37 0 39 0;
 #X connect 38 0 9 0;
 #X connect 39 0 9 0;
-#X connect 41 0 42 0;
-#X connect 41 1 43 0;
-#X connect 42 0 40 0;
-#X connect 43 0 40 0;
