@@ -1,5 +1,4 @@
-#N canvas -8 -8 1366 725 10;
-#X obj 383 273 r notesIn-\$1;
+#N canvas 4 50 1358 659 10;
 #X obj 185 679 s notesOut-\$1;
 #X obj 539 21 r loadbang-\$1;
 #X obj 25 186 inlet~ inL-\$1;
@@ -13,7 +12,7 @@
 #X text 535 62 always running. mute incoming BPM to turn off in other
 Modules;
 #N canvas 2 79 1345 714 metro 0;
-#X obj 217 164 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 217 164 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 375 164 5 0 0 0 - - -;
 #N canvas 285 555 292 294 mstobpm 0;
@@ -53,7 +52,7 @@ Modules;
 #X obj 423 300 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 333 323 ==;
-#X obj 333 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 333 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 461 350 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -187,7 +186,7 @@ purposes;
 #X floatatom 267 304 5 0 0 1 phase - -;
 #X floatatom 180 285 5 0 0 1 step - -;
 #X floatatom 378 246 5 0 0 1 tempo - -;
-#X obj 59 105 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 59 105 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 180 199 abl_link~ 1 0 4 134;
 #X floatatom 355 107 5 0 0 2 tempo - -;
@@ -267,21 +266,21 @@ use internal or MIDI clock if present.;
 #X coords 0 1 4 -1 50 50 1 0 0;
 #X restore 1139 401 graph;
 #X obj 992 576 tabread4 swing-\$1;
-#X obj 1012 624 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
-#X obj 990 527 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+#X obj 1012 624 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
+#X obj 990 527 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
 #X obj 946 209 t a;
 #X obj 971 88 t a a;
 #X obj 978 171 pipe 0;
 #X obj 1050 118 random 1024;
-#X obj 1078 165 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
+#X obj 1078 165 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 30.0938 256;
 #X obj 1049 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1205 137 clip 0 1;
-#X obj 1193 259 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
+#X obj 1193 259 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 1193 112 +;
 #X obj 1110 32 - 512;
 #X obj 1122 49 / 512;
@@ -298,8 +297,8 @@ use internal or MIDI clock if present.;
 #X obj 1079 147 / 32;
 #X obj 622 48 r c_jitter-\$1;
 #X obj 770 57 r c_drift-\$1;
-#X obj 1103 241 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
+#X obj 1103 241 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
 #X obj 1102 196 * 0;
 #X obj 1231 233 * 0;
 #X obj 1252 194 hsl 64 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
@@ -440,7 +439,7 @@ beats in a measure to use in other modules;
 #X obj 803 465 i;
 #X text 992 163 update row 5 only if active module;
 #X obj 679 121 r c_bpm-\$1;
-#X msg 633 595 Tempo 114 BPM;
+#X msg 633 595 Tempo 120 BPM;
 #X msg 490 541 set Tempo \$1 BPM MIDI \;;
 #X msg 672 541 set Tempo \$1 BPM \;;
 #X msg 803 541 set Tempo \$1 BPM LINK \;;
@@ -468,10 +467,10 @@ beats in a measure to use in other modules;
 #X obj 1040 469 *;
 #X floatatom 1043 493 5 0 0 0 - - -;
 #X floatatom 947 492 5 0 0 0 - - -;
-#X obj 838 370 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
-#X obj 1117 374 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
-0 10 -262144 -1 -1 0 256;
+#X obj 838 370 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 1117 374 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 500 256;
 #X obj 329 328 notein;
 #X obj 334 468 multicycle 12;
 #X obj 131 254 r mc_beats-\$1;
@@ -587,93 +586,122 @@ beats in a measure to use in other modules;
 #X msg 337 153 tick \$1;
 #X obj 312 98 t f f;
 #X obj 238 144 s master-ticks;
-#X connect 0 0 60 0;
-#X connect 2 0 10 0;
-#X connect 7 0 63 0;
-#X connect 10 0 12 0;
-#X connect 12 0 15 0;
-#X connect 12 0 28 0;
-#X connect 12 1 28 0;
-#X connect 12 1 16 0;
-#X connect 12 2 17 0;
-#X connect 12 2 28 0;
+#X obj 450 476 s aux-label-\$1;
+#X obj 457 454 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 454 392 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 383 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 499 258 r onotes;
+#X obj 515 286 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 484 349 r activeModule;
+#X obj 484 375 route \$1;
+#X msg 481 414 1;
+#X msg 522 421 0;
+#X obj 500 320 spigot 0;
+#X obj 493 121 r oencbut;
+#X obj 504 156 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X connect 1 0 9 0;
+#X connect 6 0 62 0;
+#X connect 9 0 11 0;
+#X connect 11 0 14 0;
+#X connect 11 0 27 0;
+#X connect 11 1 27 0;
+#X connect 11 1 15 0;
+#X connect 11 2 16 0;
+#X connect 11 2 27 0;
+#X connect 14 0 23 0;
 #X connect 15 0 24 0;
 #X connect 16 0 25 0;
-#X connect 17 0 26 0;
-#X connect 19 0 12 1;
-#X connect 20 0 27 0;
-#X connect 21 0 20 0;
-#X connect 22 0 20 0;
-#X connect 23 0 20 0;
-#X connect 24 0 20 0;
+#X connect 18 0 11 1;
+#X connect 19 0 26 0;
+#X connect 20 0 19 0;
+#X connect 21 0 19 0;
+#X connect 22 0 19 0;
+#X connect 23 0 19 0;
+#X connect 23 1 20 0;
+#X connect 24 0 19 0;
 #X connect 24 1 21 0;
-#X connect 25 0 20 0;
+#X connect 25 0 19 0;
 #X connect 25 1 22 0;
-#X connect 26 0 20 0;
-#X connect 26 1 23 0;
-#X connect 28 0 14 0;
-#X connect 29 0 28 0;
+#X connect 27 0 13 0;
+#X connect 28 0 27 0;
+#X connect 29 0 42 0;
+#X connect 29 0 47 0;
 #X connect 30 0 43 0;
-#X connect 30 0 48 0;
-#X connect 31 0 44 0;
+#X connect 31 0 32 0;
 #X connect 32 0 33 0;
-#X connect 33 0 34 0;
-#X connect 33 0 35 0;
-#X connect 33 0 49 0;
+#X connect 32 0 34 0;
+#X connect 32 0 48 0;
+#X connect 33 0 37 0;
 #X connect 34 0 38 0;
-#X connect 35 0 39 0;
+#X connect 37 0 39 0;
+#X connect 37 1 44 1;
 #X connect 38 0 40 0;
-#X connect 38 1 45 1;
-#X connect 39 0 41 0;
-#X connect 39 1 42 1;
-#X connect 40 0 45 0;
-#X connect 41 0 42 0;
-#X connect 42 0 47 0;
-#X connect 43 0 41 0;
-#X connect 44 0 40 0;
-#X connect 45 0 46 0;
-#X connect 46 0 37 0;
-#X connect 47 0 36 0;
-#X connect 50 0 58 0;
-#X connect 50 1 58 1;
-#X connect 50 2 58 2;
-#X connect 51 0 76 0;
-#X connect 52 0 53 0;
-#X connect 53 0 51 0;
-#X connect 54 0 55 0;
-#X connect 55 0 51 0;
-#X connect 56 0 57 0;
-#X connect 57 0 51 0;
-#X connect 58 0 59 0;
-#X connect 59 0 51 0;
-#X connect 60 0 51 0;
-#X connect 61 0 62 0;
-#X connect 62 0 51 0;
-#X connect 63 0 51 0;
-#X connect 74 0 75 0;
-#X connect 74 1 75 1;
-#X connect 74 2 77 0;
-#X connect 76 0 64 0;
-#X connect 76 1 65 0;
-#X connect 76 2 66 0;
-#X connect 76 3 67 0;
-#X connect 76 4 68 0;
-#X connect 76 5 69 0;
-#X connect 76 6 70 0;
-#X connect 76 7 71 0;
-#X connect 76 8 72 0;
-#X connect 76 9 73 0;
-#X connect 76 10 74 0;
-#X connect 77 0 75 2;
-#X connect 79 0 80 0;
-#X connect 81 1 85 0;
-#X connect 82 0 84 1;
-#X connect 83 0 81 0;
-#X connect 83 1 84 0;
-#X connect 84 0 86 0;
-#X connect 85 0 51 0;
-#X connect 86 0 51 0;
-#X connect 87 0 89 0;
-#X connect 88 0 51 0;
-#X connect 89 0 90 0;
-#X connect 89 1 88 0;
+#X connect 38 1 41 1;
+#X connect 39 0 44 0;
+#X connect 40 0 41 0;
+#X connect 41 0 46 0;
+#X connect 42 0 40 0;
+#X connect 43 0 39 0;
+#X connect 44 0 45 0;
+#X connect 45 0 36 0;
+#X connect 46 0 35 0;
+#X connect 49 0 57 0;
+#X connect 49 1 57 1;
+#X connect 49 2 57 2;
+#X connect 50 0 75 0;
+#X connect 50 1 90 0;
+#X connect 50 1 91 0;
+#X connect 51 0 52 0;
+#X connect 52 0 50 0;
+#X connect 53 0 54 0;
+#X connect 54 0 50 0;
+#X connect 55 0 56 0;
+#X connect 56 0 50 0;
+#X connect 57 0 58 0;
+#X connect 58 0 50 0;
+#X connect 59 0 50 0;
+#X connect 59 0 92 0;
+#X connect 60 0 61 0;
+#X connect 61 0 50 0;
+#X connect 62 0 50 0;
+#X connect 73 0 74 0;
+#X connect 73 1 74 1;
+#X connect 73 2 76 0;
+#X connect 75 0 63 0;
+#X connect 75 1 64 0;
+#X connect 75 2 65 0;
+#X connect 75 3 66 0;
+#X connect 75 4 67 0;
+#X connect 75 5 68 0;
+#X connect 75 6 69 0;
+#X connect 75 7 70 0;
+#X connect 75 8 71 0;
+#X connect 75 9 72 0;
+#X connect 75 10 73 0;
+#X connect 76 0 74 2;
+#X connect 78 0 79 0;
+#X connect 80 1 84 0;
+#X connect 81 0 83 1;
+#X connect 82 0 80 0;
+#X connect 82 1 83 0;
+#X connect 83 0 85 0;
+#X connect 84 0 50 0;
+#X connect 85 0 50 0;
+#X connect 86 0 88 0;
+#X connect 87 0 50 0;
+#X connect 88 0 89 0;
+#X connect 88 1 87 0;
+#X connect 94 0 95 0;
+#X connect 94 0 100 0;
+#X connect 96 0 97 0;
+#X connect 97 0 98 0;
+#X connect 97 1 99 0;
+#X connect 98 0 100 1;
+#X connect 99 0 100 1;
+#X connect 100 0 59 0;
+#X connect 101 0 102 0;
