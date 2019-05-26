@@ -18,7 +18,7 @@
     "pages" : [
     
         ["pg_main","Main",["mc_beats","mc_overdub"]],
-        ["pg_setup","Setup",["mc_quantize"]],
+        ["pg_setup","Setup",["mc_quantize","mc_inchan"]],
         ["pg_tempo","Main",["c_bpm","c_swing8","c_swing16","c_midiout"]],
         ["pg_human","Humanize",["c_jitter","c_drift","c_driftrate"]]
     ]
