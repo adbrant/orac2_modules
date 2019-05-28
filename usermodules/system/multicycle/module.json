@@ -16,7 +16,7 @@
         ["int","mc_beats","Beats",0,64,4],
         ["int","mc_quantize","Quantize",0,4,0],
         ["bool","mc_overdub","Overdub",0],
-        ["int","mc_inchan","Midi In channel",0,16,0]
+        ["int","mc_inchan","Midi In channel",-1,16,0]
         
     ],
     "pages" : [
