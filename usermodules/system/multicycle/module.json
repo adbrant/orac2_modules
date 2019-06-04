@@ -13,6 +13,14 @@
         ["int","mc_chan_2","Chan 2",1,26,1],
         ["int","mc_chan_3","Chan 3",1,26,1],
         ["int","mc_chan_4","Chan 4",1,26,1],
+        ["int","mc_chan_5","Chan 5",1,26,1],
+        ["int","mc_chan_6","Chan 6",1,26,1],
+        ["int","mc_chan_7","Chan 7",1,26,1],
+        ["int","mc_chan_8","Chan 8",1,26,1],
+        ["int","mc_chan_9","Chan 9",1,26,1],
+        ["int","mc_chan_10","Chan 10",1,26,1],
+        ["int","mc_chan_11","Chan 11",1,26,1],
+        ["int","mc_chan_12","Chan 12",1,26,1],
         ["int","mc_beats","Beats",0,64,4],
         ["int","mc_quantize","Quantize",0,4,0],
         ["bool","mc_overdub","Overdub",0],
@@ -23,9 +31,10 @@
     
         ["pg_main","Main",["mc_beats","mc_overdub"]],
         ["pg_setup","Setup",["mc_quantize","mc_inchan"]],
-        ["pg_chan1","Chan.",["mc_chan_1","mc_chan_2","mc_chan_3","mc_chan_4"]],
-        ["pg_tempo","Main",["c_bpm","c_swing8","c_swing16","c_midiout"]],
-        ["pg_human","Humanize",["c_jitter","c_drift","c_driftrate"]]
+        ["pg_tempo","Main",["c_bpm","c_midiout"]]
+        ["pg_chan1","Chan.1",["mc_chan_1","mc_chan_2","mc_chan_3","mc_chan_4"]],
+        ["pg_chan2","Chan.2",["mc_chan_5","mc_chan_6","mc_chan_7","mc_chan_8"]],
+        ["pg_chan3","Chan.3",[,"mc_chan_9","mc_chan_10","mc_chan_11","mc_chan_12"]]
     ]
 }
 
