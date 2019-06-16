@@ -681,7 +681,7 @@ beats in a measure to use in other modules;
 #X text 444 386 todo: fix numbering?;
 #X obj 486 338 - 10;
 #X msg 214 161 \$1 \$2 \$3 0;
-#X obj 404 269 \$2 \$3 \$1;
+#X msg 390 266 \$2 \$3 \$1;
 #X connect 0 0 17 0;
 #X connect 12 0 13 0;
 #X connect 12 1 13 1;
