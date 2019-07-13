@@ -23,10 +23,22 @@
         ["int","mc_chan_10","Chan 10",1,26,1],
         ["int","mc_chan_11","Chan 11",1,26,1],
         ["int","mc_chan_12","Chan 12",1,26,1],
+        ["int","mc_trans_1","Trans 1"  ,-24,24,0],
+        ["int","mc_trans_2", "Trans 2"  ,-24,24,0],
+        ["int","mc_trans_3", "Trans 3"  ,-24,24,0],
+        ["int","mc_trans_4", "Trans 4"  ,-24,24,0],
+        ["int","mc_trans_5", "Trans 5"  ,-24,24,0],
+        ["int","mc_trans_6", "Trans 6"  ,-24,24,0],
+        ["int","mc_trans_7", "Trans 7"  ,-24,24,0],
+        ["int","mc_trans_8", "Trans 8"  ,-24,24,0],
+        ["int","mc_trans_9", "Trans 9"  ,-24,24,0],
+        ["int","mc_trans_10","Trans 10",-24,24,0],
+        ["int","mc_trans_11","Trans 11",-24,24,0],
+        ["int","mc_trans_12","Trans 12",-24,24,0],
         ["int","mc_beats","Beats",0,64,4],
         ["int","mc_quantize","Quantize",0,4,0],
         ["bool","mc_overdub","Overdub",0],
-        ["int","mc_inchan","Midi In channel",-1,16,0]
+        ["int","mc_inchan","Midi In channel",-1,16,-1]
         
     ],
     "pages" : [
@@ -36,7 +48,10 @@
         ["pg_tempo","Main",["c_bpm","c_midiout","c_clickvol_l","c_clickvol_r"]],
         ["pg_chan1","Chan.1",["mc_chan_1","mc_chan_2","mc_chan_3","mc_chan_4"]],
         ["pg_chan2","Chan.2",["mc_chan_5","mc_chan_6","mc_chan_7","mc_chan_8"]],
-        ["pg_chan3","Chan.3",["mc_chan_9","mc_chan_10","mc_chan_11","mc_chan_12"]]
+        ["pg_chan3","Chan.3",["mc_chan_9","mc_chan_10","mc_chan_11","mc_chan_12"]],
+        ["pg_trans1","Trans.1",["mc_trans_1","mc_trans_2","mc_trans_3","mc_trans_4"]],
+        ["pg_trans2","Trans.2",["mc_trans_5","mc_trans_6","mc_trans_7","mc_trans_8"]],
+        ["pg_trans3","Trans.3",["mc_trans_9","mc_trans_10","mc_trans_11","mc_trans_12"]]
     ]
 }
 
