@@ -35,7 +35,7 @@
         ["int","mc_trans_10","Trans 10",-24,24,0],
         ["int","mc_trans_11","Trans 11",-24,24,0],
         ["int","mc_trans_12","Trans 12",-24,24,0],
-        ["int","mc_beats","Beats",0,64,4],
+        ["int","mc_beats","Loop Len",0,64,4],
         ["int","mc_quantize","Quantize",0,4,0],
         ["bool","mc_overdub","Overdub",0],
         ["int","mc_inchan","Midi In channel",-1,16,-1]
@@ -44,8 +44,8 @@
     "pages" : [
     
         ["pg_main","Main",["mc_beats","mc_overdub"]],
-        ["pg_setup","Setup",["mc_quantize","mc_inchan"]],
-        ["pg_tempo","Main",["c_bpm","c_midiout","c_clickvol_l","c_clickvol_r"]],
+        ["pg_setup","Setup",["mc_quantize","mc_inchan","c_clickvol_l","c_clickvol_r"]],
+        ["pg_tempo","Main",["c_bpm","c_midiout"]],
         ["pg_chan1","Chan.1",["mc_chan_1","mc_chan_2","mc_chan_3","mc_chan_4"]],
         ["pg_chan2","Chan.2",["mc_chan_5","mc_chan_6","mc_chan_7","mc_chan_8"]],
         ["pg_chan3","Chan.3",["mc_chan_9","mc_chan_10","mc_chan_11","mc_chan_12"]],
