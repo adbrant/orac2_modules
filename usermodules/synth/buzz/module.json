@@ -7,7 +7,7 @@
         ["float","tone","Tone",0,100,50]
     ],
     "pages" : [ 
-        ["pg_main","Main",["transpose","tone","decay"]]
+        ["pg_main","Main",["trans","tone","decay"]]
     ]
 }
 
