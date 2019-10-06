@@ -125,8 +125,6 @@
 #X obj 748 189 * 2;
 #X obj 790 123 route 0 2 123;
 #X obj 854 185 t b;
-#X obj 805 418 del 1000;
-#X obj 844 379 r \$0-duration-ms;
 #X connect 0 0 1 0;
 #X connect 1 0 53 0;
 #X connect 1 0 48 1;
@@ -154,7 +152,6 @@
 #X connect 19 0 44 0;
 #X connect 23 0 10 0;
 #X connect 23 1 28 0;
-#X connect 23 1 83 0;
 #X connect 23 2 65 0;
 #X connect 24 0 73 1;
 #X connect 28 0 48 0;
@@ -212,5 +209,3 @@
 #X connect 81 0 76 0;
 #X connect 81 2 82 0;
 #X connect 82 0 7 0;
-#X connect 83 0 72 0;
-#X connect 84 0 83 1;
