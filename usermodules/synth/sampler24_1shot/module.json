@@ -2,9 +2,8 @@
     "display" : "Sampler24",
     "parameters" :  [ 
         ["pct","s24_speed","Speed",-200,200,100],
-        ["time","s24_release","Release",0,2000,500],
+        ["time","s24_release","Release",0,2000,0],
         ["pct","s24_decay","Envelope",0,100,100],
-        ["pct","s24_start","Start",0,100,0],
         ["int","s_kit","Kit",1,12,2],
         ["int","s_slot1","Slot 1",1,24,1],
         ["int","s_slot2","Slot 2",1,24,2],
@@ -20,7 +19,7 @@
         ["int","s_slot12","Slot 12",1,24,12]
     ],
     "pages" : [ 
-        ["pg_main","Main",["s24_speed","s24_release","s24_decay", "s24_start"]],
+        ["pg_main","Main",["s24_speed"]],
         ["pg_sample1","Sample 1",["s_kit","s_slot1","s_slot2","s_slot3"]],
         ["pg_sample2","Sample 2",["s_slot4","s_slot5","s_slot6","s_slot7"]],
         ["pg_sample3","Sample 3",["s_slot8","s_slot9","s_slot10","s_slot11"]],
