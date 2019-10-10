@@ -1,4 +1,4 @@
-#N canvas 28 91 1345 720 10;
+#N canvas 3 0 1345 720 10;
 #X obj 222 165 r notesIn-\$1;
 #X obj 304 491 s notesOut-\$1;
 #X obj 25 186 inlet~ inL-\$1;
@@ -70,7 +70,7 @@
 #X obj 540 79 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 346 170 sel 1;
-#N canvas 273 97 886 691 latch 0;
+#N canvas 273 97 886 691 latch 1;
 #X obj 263 200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 263 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -88,8 +88,7 @@
 #X text 44 53 incoming notes get sent through latch if enabled \, or
 directly to output if disabled;
 #X obj 611 123 inlet;
-#X obj 325 437 s screenLine5;
-#X msg 246 380 Latch on;
+#X msg 246 381 Latch on;
 #X msg 383 363 Latch off;
 #X obj 322 265 sel 1;
 #X obj 596 164 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
@@ -100,34 +99,35 @@ directly to output if disabled;
 #X obj 225 141 spigot 1;
 #X obj 43 371 latch-notes;
 #X obj 327 136 spigot 0;
+#X obj 298 564 s aux-label-\$1;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 1 0 3 1;
-#X connect 1 0 16 0;
+#X connect 1 0 15 0;
 #X connect 2 0 8 0;
-#X connect 3 0 21 0;
+#X connect 3 0 20 0;
 #X connect 4 0 2 1;
-#X connect 5 0 21 1;
+#X connect 5 0 20 1;
 #X connect 6 0 0 0;
 #X connect 6 1 5 0;
-#X connect 7 0 20 0;
-#X connect 7 0 22 0;
+#X connect 7 0 19 0;
+#X connect 7 0 21 0;
 #X connect 9 0 3 0;
 #X connect 9 0 2 0;
 #X connect 12 0 1 0;
-#X connect 12 0 17 0;
-#X connect 14 0 13 0;
+#X connect 12 0 16 0;
+#X connect 13 0 22 0;
+#X connect 14 0 22 0;
 #X connect 15 0 13 0;
-#X connect 16 0 14 0;
-#X connect 16 1 15 0;
+#X connect 15 1 14 0;
+#X connect 16 0 17 0;
+#X connect 16 0 21 1;
 #X connect 17 0 18 0;
-#X connect 17 0 22 1;
-#X connect 18 0 19 0;
-#X connect 19 0 20 1;
-#X connect 19 0 5 0;
-#X connect 20 0 6 0;
-#X connect 21 0 8 0;
-#X connect 22 0 5 0;
+#X connect 18 0 19 1;
+#X connect 18 0 5 0;
+#X connect 19 0 6 0;
+#X connect 20 0 8 0;
+#X connect 21 0 5 0;
 #X restore 322 193 pd latch;
 #X obj 351 140 r auxIn-\$1;
 #X obj 423 152 r samp_hold-\$1;
