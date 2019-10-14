@@ -7,8 +7,8 @@
         ["int","len_raw","Length ",25,5000,500],
         ["int","temposync","Tempo Sync",0,1,0],
         
-        ["int","freq","Freq hz",0,-100,100],
-        ["int","freqnote","Freq note",0,-48,48],
+        ["int","freq","Freq hz",-100,100,0],
+        ["int","freqnote","Freq note",-48,48,0],
         ["float","lopass","Filter",0,15000,3000],
 
         
