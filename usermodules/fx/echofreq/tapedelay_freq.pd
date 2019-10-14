@@ -66,6 +66,7 @@
 #X obj 494 391 r volume-\$1;
 #X obj 491 466 *~ 1;
 #X obj 517 436 / 100;
+#X obj 249 189 / 100;
 #X connect 0 0 17 0;
 #X connect 0 0 55 0;
 #X connect 2 0 53 0;
@@ -108,7 +109,7 @@
 #X connect 37 0 14 0;
 #X connect 38 0 37 0;
 #X connect 40 0 8 0;
-#X connect 41 0 27 0;
+#X connect 41 0 57 0;
 #X connect 42 0 25 0;
 #X connect 43 0 44 0;
 #X connect 43 0 45 0;
@@ -128,3 +129,4 @@
 #X connect 55 0 39 0;
 #X connect 55 0 35 0;
 #X connect 56 0 55 1;
+#X connect 57 0 27 0;

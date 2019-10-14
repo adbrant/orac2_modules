@@ -2,7 +2,7 @@
     "name" : "echofreq",
     "display" : "echofreq",
     "parameters" :  [ 
-        ["pct","feedback","Feedback",0,150,25],
+        ["pct","feedback","Feedback",0,100,25],
         ["pct","volume","Volume",0,100,50],
         ["int","len_raw","Length ",25,5000,500],
         ["int","temposync","Tempo Sync",0,1,0],
