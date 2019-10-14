@@ -1,0 +1,35 @@
+{
+    "name" : "echofreq",
+    "display" : "echofreq",
+    "parameters" :  [ 
+        ["pct","feedback","Feedback",0,150,25],
+        ["pct","volume","Volume",0,100,50],
+        ["int","len_raw","Length ",25,5000,500],
+        ["int","temposync","Tempo Sync",0,1,0],
+        
+        ["int","freq","Freq hz",0,-100,100],
+        ["int","freqnote","Freq note",0,-48,48],
+        ["float","lopass","Filter",0,15000,3000],
+
+        
+        ["int","midigate","MIDI Gate",0,1,0],        
+        ["int","midispeed","MIDI Speed",0,1,0],     
+        ["float","gatear","Gate Speed",0,100,80],
+        ["int","exprange","Expr Range",0,3,0],
+        
+        
+        ["float","saturation","Saturation",0,3,0],
+        ["float","overdrive","Overdrive(!)",1,2,1],
+        ["freq","modrate","Mod Rate",0,10,1],
+        ["float","moddepth","Mod Depth",0,100,0] 
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["feedback","volume","len_raw","temposync"]],
+        ["pg_2","FreqShift",["freq","freqnote","lopass"]],
+        ["pg_mod","Loop",["saturation","overdrive", "modrate","moddepth"]],
+        ["pg_midi","MIDI",["midigate","midispeed","gatear","exprange"]]
+
+
+    ]
+}
+
