@@ -19,7 +19,7 @@
     ],
     "pages" : [ 
         ["pg_main","Main",["feedback","volume","len_raw_l","len_raw_r"]],
-        ["pg_2","Pg 2",["temposync","temposync","lopass", "hipass"]],
+        ["pg_2","Pg 2",["temposync","mode","lopass", "hipass"]],
         ["pg_mod","Pg 3",["len_fine_l","len_fine_r"]]
 
     ]
