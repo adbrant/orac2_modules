@@ -3,7 +3,7 @@
 #X obj 244 79 *~ 0.9;
 #X obj 850 304 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 410 88 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+#X obj 410 103 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 563 6 vsl 15 64 0 1000 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
@@ -22,7 +22,7 @@
 10 -262144 -1 -1 0 256;
 #X obj 452 2 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 498 88 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+#X obj 327 80 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
 #X obj 234 -33 delread~ maindelay-\$1 4;
 #X obj 495 647 delwrite~ maindelay-\$1 5000;
@@ -150,5 +150,5 @@
 #X connect 62 0 63 0;
 #X connect 63 0 21 0;
 #X connect 64 0 65 0;
-#X connect 65 0 3 0;
+#X connect 65 0 13 0;
 #X connect 66 0 3 0;
