@@ -1,26 +1,20 @@
 {
-    "name" : "stereodelay",
-    "display" : "stereodelay",
+    "name" : "plateverb",
+    "display" : "plateverb",
     "parameters" :  [ 
-        ["pct","feedback","Feedback",0,100,25],
+        ["pct","decay","Decay",0,100,50],
         ["pct","volume","Volume",0,100,50],
-        ["int","len_raw_l","Delay L",25,5000,500],
-        ["int","len_raw_r","Delay R ",25,5000,500],
-        
-        ["int","temposync","Tempo Sync",0,1,0],
-        ["int","mode","Mode",0,3,0],
-        
-        ["float","lopass","High Cut",0,15000,8000],
-        ["float","hipass","Low Cut",0,3000,100],
-        ["int","len_fine_l","Delay L Fine",-100,100,0],
-        ["int","len_fine_r","Delay R Fine",-100,100,0]
-
+        ["float","diffusion","Diffusion",0,1,0.7],
+        ["float","scale","Size",0,4,1],
+        ["float","mod","Modulation",0,100,0],
+        ["float","rand","Rand Mod",0,100,10],
+        ["freq","lopass","high cut",100,15000,5000]
         
     ],
     "pages" : [ 
-        ["pg_main","Main",["feedback","volume","len_raw_l","len_raw_r"]],
-        ["pg_2","Pg 2",["temposync","temposync","lopass", "hipass"]],
-        ["pg_mod","Pg 3",["len_fine_l","len_fine_r"]]
+        ["pg_main","Main",["decay","volume"]],
+        ["pg_2","Pg 2",["mod","rand","lopass", "hipass"]]
+        
 
     ]
 }
