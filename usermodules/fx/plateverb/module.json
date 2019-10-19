@@ -7,13 +7,13 @@
         ["float","diffusion","Diffusion",0,1,0.75],
         ["float","scale","Size",0,4,1],
         ["float","mod","Modulation",0,100,0],
-        ["float","rand","Rand Mod",0,100,10],
+        ["float","rand","Rand Mod",0,100,5],
         ["freq","lopass","high cut",100,15000,5000]
         
     ],
     "pages" : [ 
         ["pg_main","Main",["decay","volume","scale"]],
-        ["pg_2","Pg 2",["mod","rand","lopass", "diffusion"]]
+        ["pg_2","Pg 2",["mod","lopass"]]
         
 
     ]
