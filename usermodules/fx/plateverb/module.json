@@ -8,12 +8,13 @@
         ["float","scale","Size",0,4,1],
         ["float","mod","Modulation",0,100,0],
         ["float","rand","Rand Mod",0,100,10],
-        ["freq","lopass","high cut",100,15000,5000]
+        ["freq","lopass","high cut",100,15000,5000],
+        ["freq","hipass","lo cut",0,1000,50]
         
     ],
     "pages" : [ 
         ["pg_main","Main",["decay","volume","scale"]],
-        ["pg_2","Pg 2",["mod","lopass"]]
+        ["pg_2","Pg 2",["mod","lopass","hipass"]]
         
 
     ]

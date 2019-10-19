@@ -59,7 +59,7 @@
 #X obj 216 364 apdelay \$1 82.49 1 0;
 #X obj 96 396 catch~ tapsr-\$1;
 #X obj 49 366 catch~ tapsl-\$1;
-#X obj 816 254 s~ input-\$1;
+#X obj 773 318 s~ input-\$1;
 #X obj 68 262 r volume-\$1;
 #X obj 309 9 r decay-\$1;
 #X obj 322 41 / 100;
@@ -106,7 +106,7 @@
 #X restore 890 -10 pd sample_loop;
 #X obj 68 283 / 33;
 #X obj 758 209 lop~ 5000;
-#X obj 785 234 *~ 0.05;
+#X obj 742 298 *~ 0.05;
 #X obj 214 340 apdelay \$1 43.28 0 1;
 #X obj 225 411 apdelay \$1 56.78 1 0;
 #X obj 577 547 s~ scale_sig-\$1;
@@ -119,6 +119,8 @@
 #X obj 645 352 * 100;
 #X obj 22 422 *~ 0.2;
 #X obj 125 429 *~ 0.2;
+#X obj 750 248 hip~ 50;
+#X obj 480 138 r hipass-\$1;
 #X connect 0 0 28 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;
@@ -169,7 +171,7 @@
 #X connect 54 0 55 0;
 #X connect 55 0 25 0;
 #X connect 56 0 21 0;
-#X connect 57 0 58 0;
+#X connect 57 0 71 0;
 #X connect 58 0 44 0;
 #X connect 59 0 41 0;
 #X connect 60 0 9 0;
@@ -182,3 +184,5 @@
 #X connect 68 0 66 1;
 #X connect 69 0 19 0;
 #X connect 70 0 18 0;
+#X connect 71 0 58 0;
+#X connect 72 0 71 1;
