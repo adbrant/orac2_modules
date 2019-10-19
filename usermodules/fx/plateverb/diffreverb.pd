@@ -118,7 +118,7 @@
 #X obj 612 283 r scale-\$1;
 #X obj 606 380 list;
 #X obj 604 324 t f f;
-#X obj 645 352 * 500;
+#X obj 645 352 * 100;
 #X connect 0 0 28 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;
