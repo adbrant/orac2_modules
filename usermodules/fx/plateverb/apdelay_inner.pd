@@ -13,7 +13,7 @@
 #X obj 928 100 random 1500;
 #X obj 1047 51 loadbang;
 #X obj 950 242 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0.3145 256;
+10 -262144 -1 -1 0.6045 256;
 #X obj 991 62 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 882 424 *~ 0;
@@ -66,4 +66,5 @@
 #X connect 28 0 30 0;
 #X connect 29 0 15 1;
 #X connect 30 0 19 1;
+#X connect 31 0 8 0;
 #X connect 32 0 3 0;
