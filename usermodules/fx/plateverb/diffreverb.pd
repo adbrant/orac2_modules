@@ -1,4 +1,4 @@
-#N canvas 164 95 1366 725 10;
+#N canvas 140 49 1366 725 10;
 #X obj 202 111 +~;
 #X obj 244 79 *~ 0.9;
 #X obj 850 304 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
@@ -111,6 +111,14 @@
 #X obj 22 422 *~ 0.05;
 #X obj 214 340 apdelay \$1 43.28 0 1;
 #X obj 225 411 apdelay \$1 56.78 1 0;
+#X obj 577 547 s~ scale_sig-\$1;
+#X obj 576 342;
+#X obj 682 407 vline~;
+#X obj 676 439 lop~ 8;
+#X obj 612 283 r scale-\$1;
+#X obj 606 380 list;
+#X obj 604 324 t f f;
+#X obj 645 352 * 500;
 #X connect 0 0 28 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;
@@ -167,3 +175,10 @@
 #X connect 60 0 19 0;
 #X connect 61 0 41 0;
 #X connect 62 0 9 0;
+#X connect 65 0 66 0;
+#X connect 66 0 63 0;
+#X connect 67 0 69 0;
+#X connect 68 0 65 0;
+#X connect 69 0 68 0;
+#X connect 69 1 70 0;
+#X connect 70 0 68 1;
