@@ -13,7 +13,7 @@
     ],
     "pages" : [ 
         ["pg_main","Main",["decay","volume","scale"]],
-        ["pg_2","Pg 2",["mod","rand","lopass", "hipass"]]
+        ["pg_2","Pg 2",["mod","rand","lopass", "diffusion"]]
         
 
     ]
