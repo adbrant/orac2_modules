@@ -7,7 +7,7 @@
 #X obj 342 483 *~ 0.75;
 #X obj 284 533 +~;
 #X obj 31 569 delwrite~ \$0-tap 200;
-#X obj 692 260 delread4~ \$0-tap;
+#X obj 306 130 delread4~ \$0-tap;
 #X obj 847 344 osc~ 0.8;
 #X obj 946 159 + 500;
 #X obj 928 100 random 1500;
@@ -31,6 +31,7 @@
 #X obj 790 401 / 5;
 #X obj 773 534 +~;
 #X obj 180 248 *~ 0.75;
+#X obj 670 351 rand;
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
 #X connect 1 0 7 0;
@@ -62,3 +63,4 @@
 #X connect 27 0 18 1;
 #X connect 28 0 8 0;
 #X connect 29 0 3 0;
+#X connect 30 0 18 0;
