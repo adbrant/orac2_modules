@@ -2,9 +2,9 @@
     "name" : "plateverb",
     "display" : "plateverb",
     "parameters" :  [ 
-        ["pct","decay","Decay",0,100,50],
+        ["pct","decay","Decay",0,100,90],
         ["pct","volume","Volume",0,100,50],
-        ["float","diffusion","Diffusion",0,1,0.7],
+        ["float","diffusion","Diffusion",0,1,0.75],
         ["float","scale","Size",0,4,1],
         ["float","mod","Modulation",0,100,0],
         ["float","rand","Rand Mod",0,100,10],
@@ -12,7 +12,7 @@
         
     ],
     "pages" : [ 
-        ["pg_main","Main",["decay","volume"]],
+        ["pg_main","Main",["decay","volume","scale"]],
         ["pg_2","Pg 2",["mod","rand","lopass", "hipass"]]
         
 
