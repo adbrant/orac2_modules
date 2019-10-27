@@ -1,0 +1,14 @@
+{
+    "display" : "Warble",
+    "parameters" :  [ 
+        ["float","speed","Speed",1,5,1],
+        ["float","depth","Depth",0,25,5],
+        ["float","noise","Noise",0,100,0],
+        ["float","filt","Filter",0,40000,40000],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["speed","depth","filt","noise" ]]
+    ]
+}
+
