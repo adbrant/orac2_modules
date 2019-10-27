@@ -8,7 +8,7 @@
 #X obj 445 180 r auxIn-\$1;
 #X obj 423 208 r expIn-\$1;
 #X obj 456 225 r fsIn-\$1;
-#X obj 51 548 warble \$1;
+#X obj 51 547 warble \$1;
 #X connect 2 0 9 0;
 #X connect 3 0 9 1;
 #X connect 9 0 4 0;
