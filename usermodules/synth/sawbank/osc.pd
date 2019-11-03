@@ -14,7 +14,8 @@
 #X obj 179 98 + 0;
 #X obj 244 117 r transpose-\$1;
 #X obj 97 277 list 250;
-#X obj 213 201 r glide-\$1;
+#X obj 123 250 r glide-\$1;
+#X obj 240 164 t b f;
 #X connect 0 0 5 0;
 #X connect 1 0 11 0;
 #X connect 2 0 4 0;
@@ -25,6 +26,8 @@
 #X connect 7 2 8 0;
 #X connect 8 0 10 0;
 #X connect 12 0 2 0;
-#X connect 13 0 12 1;
+#X connect 13 0 16 0;
 #X connect 14 0 3 0;
 #X connect 15 0 14 1;
+#X connect 16 0 12 0;
+#X connect 16 1 12 1;

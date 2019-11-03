@@ -2,21 +2,22 @@
     "name" : "sawbank",
     "display" : "SawBank",
     "parameters" :  [ 
-        ["int","offset","Semitone Offset",-24,24,0],
+        ["int","transpose","Semitone Offset",-24,24,0],
         ["pct","vol","Volume",0,100,50],
         ["int","attack","Attack",0,2000,250],
+        ["int","decay","Decay",0,2000,250],
         ["int","glide","Glide",0,2000,250],
-        ["pct","folder_sustain","Sustain",0,100,50],
-        ["pct","folder_folding","Folding",0,100,50],
+        ["float","resonance","Res",0,4,2],
+        ["float","cutoff","Cutoff",100,5000,1200],
         ["freq","folder_vrate","Vibr Rate",0.01,20,1],
         ["pct","folder_vdepth","Vibr Depth",0,20,0],
         ["freq","folder_mrate","Mod Rate",0.01,10,1],
         ["pct","folder_mdepth","Mod Depth",0,100,0]
     ],
     "pages" : [ 
-        ["pg_main","Main",["offset","attack","glide","cutoff"]],
-        ["pg_env","Env",["decay","folder_decay","folder_sustain"]],
-        ["pg_mod","Mod",["folder_vrate","folder_vdepth","folder_mrate","folder_mdepth"]]
+        ["pg_main","Main",["offset","attack","decay", "glide"]],
+        ["pg_env","Filt",["cutoff","resonance"]],
+        ["pg_mod","Mod",[]]
     ]
 }
 
