@@ -45,6 +45,8 @@
 #X obj 440 48 sel 0 1;
 #X obj 719 26 r cutoff-\$1;
 #X obj 572 448 r resonance-\$1;
+#X msg 416 80 0;
+#X msg 526 66 1;
 #X connect 0 0 25 0;
 #X connect 1 0 0 0;
 #X connect 2 0 1 2;
@@ -101,7 +103,9 @@
 #X connect 38 0 37 1;
 #X connect 39 0 3 0;
 #X connect 40 0 39 1;
-#X connect 41 0 39 0;
-#X connect 41 1 37 0;
+#X connect 41 0 44 0;
+#X connect 41 1 45 0;
 #X connect 42 0 6 1;
 #X connect 43 0 2 0;
+#X connect 44 0 39 0;
+#X connect 45 0 37 0;
