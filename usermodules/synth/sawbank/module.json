@@ -15,7 +15,7 @@
         ["pct","folder_mdepth","Mod Depth",0,100,0]
     ],
     "pages" : [ 
-        ["pg_main","Main",["offset","attack","decay", "glide"]],
+        ["pg_main","Main",["transpose","attack","decay", "glide"]],
         ["pg_env","Filt",["cutoff","resonance"]],
         ["pg_mod","Mod",[]]
     ]

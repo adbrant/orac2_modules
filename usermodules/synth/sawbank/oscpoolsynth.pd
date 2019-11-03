@@ -43,7 +43,7 @@
 #X obj 430 114 list 250;
 #X obj 456 87 r decay-\$1;
 #X obj 440 48 sel 0 1;
-#X obj 571 374 r cutoff-\$1;
+#X obj 719 26 r cutoff-\$1;
 #X obj 572 448 r resonance-\$1;
 #X connect 0 0 25 0;
 #X connect 1 0 0 0;
