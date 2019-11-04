@@ -23,10 +23,11 @@
 #X msg 361 261 0;
 #X msg 402 316 1;
 #X obj 403 230 delay 25;
+#X obj 194 212 pipe 5;
 #X connect 0 0 4 0;
 #X connect 1 0 8 0;
-#X connect 2 0 14 0;
 #X connect 2 0 20 0;
+#X connect 2 0 24 0;
 #X connect 3 0 1 0;
 #X connect 4 1 9 0;
 #X connect 5 0 6 0;
@@ -50,3 +51,4 @@
 #X connect 21 0 15 1;
 #X connect 22 0 16 1;
 #X connect 23 0 22 0;
+#X connect 24 0 14 0;
