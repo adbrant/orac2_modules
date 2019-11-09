@@ -11,7 +11,7 @@
     ],
     "pages" : [ 
         ["pg_main","Page 1",["4x","8x","16x"]],
-        ["pg_triple","Page 2",["3x","6x","12x"]],
+        ["pg_triple","Page 2",["3x","6x","12x"]]
     ]
 }
 
