@@ -1,0 +1,14 @@
+#N canvas -7 0 1358 716 10;
+#X obj 304 186 r notesIn-\$1;
+#X obj 304 491 s notesOut-\$1;
+#X obj 25 186 inlet~ inL-\$1;
+#X obj 135 186 inlet~ inR-\$1;
+#X obj 27 491 outlet~ outL-\$1;
+#X obj 136 491 outlet~ outR-\$1;
+#X obj 424 185 r auxIn-\$1;
+#X obj 423 208 r expIn-\$1;
+#X obj 423 233 r fsIn-\$1;
+#X obj 501 347 r bpm;
+#X obj 289 303 ratchet \$1;
+#X connect 0 0 10 0;
+#X connect 10 0 1 0;

@@ -1,0 +1,17 @@
+{
+    "name" : "ratchet",
+    "display" : "Ratchet",
+    "parameters" :  [ 
+        ["float","4x","4x Note Prob.",0,100,0],
+        ["float","8x","8x Note Prob.",0,100,0],
+        ["float","16x","16x Note Prob.",0,100,0],
+        ["float","3x","3x Note Prob.",0,100,0],
+        ["float","6x","6x Note Prob.",0,100,0],
+        ["float","12x","12x Note Prob.",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Page 1",["4x","8x","16x"]],
+        ["pg_triple","Page 2",["3x","6x","12x"]],
+    ]
+}
+
