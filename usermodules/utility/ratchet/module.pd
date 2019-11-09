@@ -10,7 +10,7 @@
 #X obj 423 233 r fsIn-\$1;
 #X obj 501 347 r bpm;
 #X obj 289 303 ratchet \$1;
-#X obj 350 405 \$1 \$2 0;
+#X msg 361 359 \$1 \$2 0;
 #X connect 0 0 10 0;
 #X connect 10 0 11 0;
 #X connect 11 0 1 0;
