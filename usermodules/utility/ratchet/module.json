@@ -8,11 +8,12 @@
         ["float", "gate", "Gate",0,100,50],
         ["float","3x","3x Note Prob.",0,100,0],
         ["float","6x","6x Note Prob.",0,100,0],
+        ["int","monopoly","Mono/Poly",0,1,1],
         ["float","12x","12x Note Prob.",0,100,0]
     ],
     "pages" : [ 
         ["pg_main","Page 1",["gate","4x","8x","16x"]],
-        ["pg_triple","Page 2",["3x","6x","12x"]]
+        ["pg_triple","Page 2",["monopoly","3x","6x","12x"]]
     ]
 }
 
