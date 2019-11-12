@@ -1,0 +1,30 @@
+{
+    "name" : "samplement",
+    "display" : "Samplement",
+    "parameters" :  [ 
+        ["int","samp_source","Sample source",0,25,0],
+        ["float","samp_select","|`-> select",0,100,0],
+        ["pitch","samp_semitone","Pitch",-48,48,0],
+        ["float","samp_cent","`-> fine",-50,50,0],
+        ["float","samp_pan","Panoramic",-1,1,0],
+        ["pct","samp_vol","Volume",0,100,50],
+        ["pct","samp_start","|`-> start",0,100,0],
+        ["pct","samp_end","|`-> end",0,100,100],
+        ["int","samp_mode","Mode",1,5,1],
+        ["pct","samp_attack","`-> envelope",0,100,0],
+        ["float","samp_decay","Decay",0,1,0],
+        ["freq","samp_modrate","`-> freq.",0.1,50,1],
+        ["pct","samp_moddepth","Modulation",0,100,0],
+        ["freq","samp_ctrlsmooth","Portamento",0.1,20,20],
+        ["float","samp_rc_size","Grains size",0,10,1],
+        ["pct","samp_rc_env","`-> envelope",0,100,1],
+        ["bool","monaural","Monaural",0]
+         
+    ],
+    "pages" : [ 
+        ["pg_select","Selection",["samp_source","samp_select","samp_start","samp_end"]],
+        ["pg_modes","Modes",["samp_ctrlsmooth","samp_pan","monaural","samp_mode"]],
+        ["pg_pitch","Pitch",["samp_semitone","samp_cent","samp_moddepth","samp_modrate"]],
+	["pg_amp","Amplitude",["samp_vol","samp_attack","samp_rc_size","samp_rc_env"]]
+    ]
+}

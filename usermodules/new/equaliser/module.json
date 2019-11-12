@@ -1,0 +1,13 @@
+{
+    "display" : "Equaliser",
+    "parameters" :  [ 
+        ["pct","thru_gain","Audio Thru Gain",0,100,0],
+        ["pct","lowband","Low freq.",0,200,100],
+        ["freq","crossfade","Crossfade",50,3000,1000],
+        ["pct","highband","High freq.",0,200,100]
+    ],
+    "pages" : [ 
+        ["pg_eq","EQ",["lowband","highband","crossfade"]]
+    ]
+}
+

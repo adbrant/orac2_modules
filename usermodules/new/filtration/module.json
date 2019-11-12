@@ -1,0 +1,14 @@
+{
+    "display" : "Filtration",
+    "parameters" :  [ 
+        ["pct","thru_gain","Audio Thru Gain",0,100,0],
+        ["pct","moog_cut","Low-pass",0,100,100],
+        ["pct","moog_res","Resonance",0,100,0],
+        ["pct","moog_env","Envelope",0,100,0],
+        ["pct","highpass","High-pass",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_freq","Frequency",["highpass","moog_env","moog_res","moog_cut"]]
+    ]
+}
+
