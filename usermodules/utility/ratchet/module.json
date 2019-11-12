@@ -2,18 +2,23 @@
     "name" : "ratchet",
     "display" : "Ratchet",
     "parameters" :  [ 
-        ["float","4x","4x Note Prob.",0,100,0],
-        ["float","8x","8x Note Prob.",0,100,0],
-        ["float","16x","16x Note Prob.",0,100,0],
-        ["float", "gate", "Gate",0,100,50],
+        ["float","1x","1x Note Prob.",0,100,0],
+        ["float","2x","2x Note Prob.",0,100,0],
         ["float","3x","3x Note Prob.",0,100,0],
+        ["float","4x","4x Note Prob.",0,100,0],
+        ["float","5x","5x Note Prob.",0,100,0],
         ["float","6x","6x Note Prob.",0,100,0],
-        ["int","monopoly","Mono/Poly",0,1,1],
-        ["float","12x","12x Note Prob.",0,100,0]
+        ["float","8x","8x Note Prob.",0,100,0],
+        ["float","12x","12x Note Prob.",0,100,0],
+        ["float","16x","16x Note Prob.",0,100,0],
+        ["float", "gate", "Gate",0,100,50],        
+        ["int","monopoly","Mono/Poly",0,1,1]
+        
     ],
     "pages" : [ 
-        ["pg_main","Page 1",["gate","4x","8x","16x"]],
-        ["pg_triple","Page 2",["monopoly","3x","6x","12x"]]
+        ["pg_main","Page 1",["1x","2x","4x","8x"]],
+        ["pg_2","Page 2",["monopoly","gate","3x","5x"]],
+        ["pg_3","Page 3",["6x","12x","16x"]]
     ]
 }
 
