@@ -13,6 +13,7 @@
         ["int","ps_slot","Save Slot",1,32,1],
         ["int","ps_transpose","Transpose",-24,24,0],
         ["time","ps_length","Length",1,2000,50],
+        ["int","ps_manual","Man. Mode",0,1,0],
         ["int","ps_velo","Play Vel.",0,127,0],
         ["int","ps_velo_rec","Rec Vel.",0,127,0]
      ],
@@ -20,7 +21,7 @@
         ["pg_main","Main",["ps_record","ps_play","ps_rev","ps_rand"]],
         ["pg_time","Time",["ps_div","ps_mul","ps_length" ]],
         ["pg_note","Note",["ps_transpose","ps_velo","ps_velo_rec"]],
-        ["pg_misc","Func.",["ps_thru","ps_aux","ps_slot"]]
+        ["pg_misc","Func.",["ps_thru","ps_manual","ps_aux","ps_slot"]]
     ]
 }
 
