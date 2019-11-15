@@ -2,7 +2,7 @@
     "name" : "U-polystep",
     "display" : "PolyStep",
     "parameters" :  [ 
-        ["bool","ps_record","Record",1],
+        ["int","ps_record","Record",-2,1,1],
         ["bool","ps_play","Play",1],
         ["bool","ps_thru","Midi Thru",0],
         ["bool","ps_rev","Reverse",0],
@@ -21,7 +21,7 @@
         ["pg_main","Main",["ps_record","ps_play","ps_rev","ps_rand"]],
         ["pg_time","Time",["ps_div","ps_mul","ps_length" ]],
         ["pg_note","Note",["ps_transpose","ps_velo","ps_velo_rec"]],
-        ["pg_misc","Func.",["ps_thru","ps_manual","ps_aux","ps_slot"]]
+        ["pg_misc","Func.",["ps_thru","ps_aux","ps_slot"]]
     ]
 }
 
