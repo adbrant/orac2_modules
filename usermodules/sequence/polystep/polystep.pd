@@ -1,4 +1,4 @@
-#N canvas -8 -8 1360 725 10;
+#N canvas -8 -8 1366 725 10;
 #X obj 142 70 poly 8 0;
 #X obj 140 109 pack 0 0 0;
 #N canvas 0 50 450 250 (subpatch) 0;
@@ -156,6 +156,7 @@
 #X obj 736 261 stripnote;
 #X obj 297 86 ||;
 #X obj 684 262 > 0;
+#X obj 631 612 - 60;
 #X connect 0 0 7 0;
 #X connect 1 0 15 0;
 #X connect 1 0 42 0;
@@ -222,7 +223,7 @@
 #X connect 51 0 52 1;
 #X connect 51 0 59 0;
 #X connect 52 0 26 0;
-#X connect 53 0 52 1;
+#X connect 53 0 60 0;
 #X connect 54 0 55 0;
 #X connect 55 1 56 0;
 #X connect 55 2 56 1;
@@ -231,6 +232,7 @@
 #X connect 57 0 53 0;
 #X connect 58 0 37 1;
 #X connect 59 0 58 0;
+#X connect 60 0 52 1;
 #X restore 485 451 pd player;
 #X obj 192 12 r ps_record-\$1;
 #X obj 328 348 s activestep-\$0;
