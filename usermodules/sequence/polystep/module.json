@@ -2,7 +2,7 @@
     "name" : "U-polystep",
     "display" : "PolyStep",
     "parameters" :  [ 
-        ["int","ps_record","Record",-2,1,1],
+        ["int","ps_record","Input Mode",-2,1,1],
         ["bool","ps_play","Play",1],
         ["bool","ps_thru","Midi Thru",1],
         ["bool","ps_rev","Reverse",0],
