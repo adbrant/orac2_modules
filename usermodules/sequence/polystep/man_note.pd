@@ -8,12 +8,12 @@
 #X obj 461 138 inlet;
 #X obj 164 166 t f f;
 #X obj 237 328 pack 0 0;
-#X obj 479 236 t b b;
+#X obj 469 201 t b b;
 #X msg 544 273 0;
 #X obj 391 278 f 0;
 #X obj 570 97 inlet;
 #X obj 578 159 > \$2;
-#X obj 174 266 sel 0;
+#X obj 174 266 sel 0, f 7;
 #X connect 0 0 4 0;
 #X connect 2 0 14 0;
 #X connect 3 0 8 1;
@@ -28,5 +28,5 @@
 #X connect 10 0 8 1;
 #X connect 11 0 8 0;
 #X connect 12 0 13 0;
-#X connect 14 0 11 1;
-#X connect 14 0 8 0;
+#X connect 14 1 8 0;
+#X connect 14 1 11 1;
