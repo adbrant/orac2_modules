@@ -4,7 +4,7 @@
     "parameters" :  [ 
         ["int","ps_record","Record",-2,1,1],
         ["bool","ps_play","Play",1],
-        ["bool","ps_thru","Midi Thru",0],
+        ["bool","ps_thru","Midi Thru",1],
         ["bool","ps_rev","Reverse",0],
         ["bool","ps_rand","Random",0],
         ["int","ps_div","Beat Div.",1,24,4],

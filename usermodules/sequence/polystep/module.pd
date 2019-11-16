@@ -13,9 +13,15 @@
 #X obj 512 248 r ps_thru-\$1;
 #X obj 441 304 spigot 1;
 #X msg 320 376 \$1 \$2 0;
+#X obj 450 413 spigot 1;
+#X obj 521 331 r ps_record-\$1;
+#X obj 521 378 > -1;
 #X connect 0 0 10 0;
 #X connect 0 0 12 0;
 #X connect 10 0 13 0;
 #X connect 11 0 12 1;
-#X connect 12 0 1 0;
+#X connect 12 0 14 0;
 #X connect 13 0 1 0;
+#X connect 14 0 1 0;
+#X connect 15 0 16 0;
+#X connect 16 0 14 1;
