@@ -33,7 +33,7 @@
 #X obj 336 225 sel 0;
 #X obj 336 249 f 0;
 #X obj 345 320 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 1 256;
+10 -262144 -1 -1 3 256;
 #X obj 338 267 + 1;
 #X obj 125 122 t a a a;
 #X obj 204 149 unpack 0 0 0, f 6;
@@ -46,7 +46,7 @@
 #X obj 232 330 + 0, f 5;
 #X obj 228 357 t f f;
 #X msg 216 381 0;
-#X floatatom 486 434 5 0 0 2 steps - -;
+#X floatatom 456 422 5 0 0 2 steps - -;
 #X obj 138 2 inlet;
 #X obj 124 46 spigot 0;
 #X obj 632 220 f;
@@ -58,7 +58,7 @@
 #X msg 736 236 stop;
 #X obj 775 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas -8 -8 1366 725 player 0;
+#N canvas -8 -8 1366 725 player 1;
 #X obj 213 488 tabread notearray-\$0;
 #X obj 282 448 + 0;
 #X obj 226 126 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -158,6 +158,7 @@
 #X obj 684 258 > 0;
 #X obj 631 612 - 60;
 #X obj 682 295 spigot 0;
+#X obj 258 48 change -1;
 #X connect 0 0 7 0;
 #X connect 1 0 15 0;
 #X connect 1 0 42 0;
@@ -182,7 +183,7 @@
 #X connect 17 0 6 1;
 #X connect 17 0 30 1;
 #X connect 18 0 37 0;
-#X connect 19 0 37 1;
+#X connect 19 0 62 0;
 #X connect 19 1 20 0;
 #X connect 20 0 3 1;
 #X connect 21 0 22 0;
@@ -232,10 +233,12 @@
 #X connect 55 2 59 0;
 #X connect 56 0 57 0;
 #X connect 57 0 53 0;
-#X connect 58 0 37 1;
+#X connect 58 0 62 0;
 #X connect 59 0 61 0;
 #X connect 60 0 52 1;
 #X connect 61 0 58 0;
+#X connect 62 0 37 1;
+#X connect 62 0 20 0;
 #X restore 485 451 pd player;
 #X obj 192 12 r ps_record-\$1;
 #X obj 328 348 s activestep-\$0;
@@ -252,7 +255,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 486 19 r ps_record-\$1;
 #X obj 516 190 timer;
 #X obj 518 213 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 609.909 256;
+10 -262144 -1 -1 318.209 256;
 #X floatatom 512 140 5 0 0 0 - - -;
 #X obj 494 163 sel 1;
 #X obj 558 167 sel 0;
@@ -421,7 +424,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 702 502 s aux-label-\$1;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array len-\$0 1 float 3;
-#A 0 1;
+#A 0 3;
 #X coords 0 65 1 0 10 50 1 0 0;
 #X restore 861 413 graph;
 #X obj 564 438 tabwrite len-\$0;
@@ -475,7 +478,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 874 282 man_note \$0 7;
 #X obj 221 196 t f f;
 #X obj 280 101 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 3 256;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 28 0;
