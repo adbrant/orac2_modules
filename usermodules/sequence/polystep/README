@@ -1,6 +1,5 @@
 Polystep: Polyphonic Step Sequencer
-Up to 64 steps with up to 8 notes per step. 
-Support saving and loading up to 32 patterns. 
+Up to 64 steps with up to 8 notes per step. Sequence is saved with preset
 Playback order can be reversed or randomized.
 
 Usage:
@@ -14,7 +13,11 @@ Usage:
 
 Parameters:
   Page 1: Main
-    Record:  When true, incoming notes are recorded into the sequence.
+    Mode:  
+      Record (1) - Incoming notes are added to the sequence
+      Off (0) - Incoming notes have no effect
+      Manual(-1) - Incoming notes trigger different steps based, on the note value (useful for triggering different chords with a single key).
+      Transpose(-2) - Incoming notes transpose the sequence. If not playing, incoming notes will also play the sequence from the beginning.
     Play: When true, sequence will play. After going false, the sequence will restart at step 0.
     Reverse: When true, sequence will play in reverse
     Random: When true, sequence will play in random order
@@ -34,6 +37,3 @@ Parameters:
     Aux Func. : Changes what a long press of Aux does:
       0 (Default:): Erase all notes in pattern
       1 : Undo last step
-      2: Save to active slot
-      3: Load from active slot
-    Save Slot : Chooses slot to save/load from. When changed the number of steps in the slot are displayed
