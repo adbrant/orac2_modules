@@ -33,7 +33,7 @@
 #X obj 336 225 sel 0;
 #X obj 336 249 f 0;
 #X obj 360 333 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 1 256;
+10 -262144 -1 -1 0 256;
 #X obj 338 267 + 1;
 #X obj 125 122 t a a a;
 #X obj 204 149 unpack 0 0 0, f 6;
@@ -58,7 +58,7 @@
 #X msg 736 236 stop;
 #X obj 775 241 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas -8 -8 1366 725 player 0;
+#N canvas -8 -8 1366 725 player 1;
 #X obj 213 488 tabread notearray-\$0;
 #X obj 282 448 + 0;
 #X obj 226 126 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -81,7 +81,7 @@
 10 -262144 -1 -1 0 256;
 #X obj 245 379 f;
 #X floatatom 95 74 5 0 0 2 steps - -;
-#N canvas 13 67 1351 716 step 0;
+#N canvas 13 67 1351 716 step 1;
 #X obj 200 76 beatdiv;
 #X obj 148 146 sel 0;
 #X obj 177 101 f 0;
@@ -98,7 +98,7 @@
 #X obj 227 264 outlet;
 #X obj 231 46 r ps_div-\$1;
 #X obj 245 93 r ps_mul-\$1;
-#X obj 127 24 r 24ppq;
+#X obj 127 24 r master-ticks;
 #X connect 0 0 2 0;
 #X connect 1 0 6 0;
 #X connect 2 0 5 0;
@@ -255,7 +255,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 486 19 r ps_record-\$1;
 #X obj 516 190 timer;
 #X obj 518 213 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 360.295 256;
+10 -262144 -1 -1 0 256;
 #X floatatom 512 140 5 0 0 0 - - -;
 #X obj 494 163 sel 1;
 #X obj 558 167 sel 0;
@@ -503,7 +503,7 @@ random slot 1-16 aux mode: erase save load, f 11;
 #X obj 874 282 man_note \$0 7;
 #X obj 221 196 t f f;
 #X obj 280 101 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 1 256;
+10 -262144 -1 -1 0 256;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 28 0;
