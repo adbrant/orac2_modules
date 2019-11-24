@@ -29,7 +29,7 @@
         ["float","timbre","Timbre",0,100,50],
         ["float","morph","Morph",0,100,50],
         ["float","lpg_colour","LPG Colour",0,100,50],
-        ["float","decay","Decay",0,100,50], 
+        ["float","decay_internal","Decay",0,100,50], 
         ["bool","aux","Main/Aux",0],        
         ["float","mod_timbre","Mod Timbre",-1,1,0],
         ["float","mod_fm","Mod FM",-1,1,0],
