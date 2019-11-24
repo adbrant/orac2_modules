@@ -51,11 +51,9 @@
         ["int","mc_beats","Loop Len",0,64,4],
         ["int","mc_quantize","Quantize",0,4,0],
         ["bool","mc_overdub","Overdub",0],
-        ["int","mc_inchan","Midi In channel",-1,16,-1]
-        
+        ["int","mc_inchan","Midi In channel",-1,16,-1]       
     ],
-    "pages" : [
-    
+    "pages" : [  
         ["pg_main","Main",["mc_beats","mc_overdub"]],
         ["pg_setup","Setup",["mc_quantize","mc_inchan","c_clickvol_l","c_clickvol_r"]],
         ["pg_tempo","Main",["c_bpm","c_midiout","arm_mode"]],

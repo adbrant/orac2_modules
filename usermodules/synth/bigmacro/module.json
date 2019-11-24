@@ -1,0 +1,52 @@
+{
+    "name" : "BigMacro",
+    "display" : "BigMacro",
+    "parameters" :  [ 
+        ["int","transpose","Semitone Offset",-24,24,0],
+        ["float","attack","Attack",5,3000,50],
+        ["float","decay","Decay",5,3000,50],
+        ["float","sustain","sustain",0,1,1],
+        ["float","release","Release",5,3000,50],
+        ["float","attack-f","Attack",5,3000,50],
+        ["float","decay-f","Decay",5,3000,50],
+        ["float","sustain-f","sustain",0,1,1],
+        ["float","release-f","Release",5,3000,50],
+        ["float","envfilt","Filter Env",0,1,0],
+        ["float","envpitch","Pitch Env",0,1,0],
+        ["float","filt_cutoff","Cutoff",0,32,8],
+        ["float","filt_q","Resonance",1,5,2],
+        ["int","filttype","FiltType",0,3,0],
+        ["float","mod_speed","Mod Speed",0.1,15,2],
+        ["float","vibrato_depth","Vib. Depth",0,10,0],
+        ["float","tremolo_depth","Trem. Depth",0,1,0],
+        ["float","fmod_depth","Filtmod. Depth",0,1,0],
+        ["float","noise","Noise",0,100,0],
+        ["int","tune","Fine Tune",-100,100,0],
+        ["int","volume","Volume",0,100,70],
+        ["int","model","Model",0,15,0],
+        ["bool","trigger_active","Trigger",0],
+        ["float","harmonics","Harmonics",0,100,50],
+        ["float","timbre","Timbre",0,100,50],
+        ["float","morph","Morph",0,100,50],
+        ["float","lpg_colour","LPG Colour",0,100,50],
+        ["float","decay","Decay",0,100,50], 
+        ["bool","aux","Main/Aux",0],        
+        ["float","mod_timbre","Mod Timbre",-1,1,0],
+        ["float","mod_fm","Mod FM",-1,1,0],
+        ["float","mod_morph","Mod Morph",-1,1,0]       
+
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["transpose","tune","volume" ]],
+         ["pg_1","P1",["model","harmonics","timbre","morph"]],
+        ["pg_2","P2",["aux","trigger_active"]],
+        ["pg_3","P3",["lpg_colour","decay"]],
+        ["pg_4","Mod",["mod_timbre","mod_fm","mod_morph"]], 
+        ["pg_env","Amp Env",["attack","decay","sustain","release"]],
+        ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
+        ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
+        ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
+        ["pg_misc","Misc",["envpitch","noise"]]
+    ]
+}
+
