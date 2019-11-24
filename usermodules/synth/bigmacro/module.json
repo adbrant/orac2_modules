@@ -40,13 +40,13 @@
         ["pg_main","Main",["transpose","tune","volume" ]],
          ["pg_1","P1",["model","harmonics","timbre","morph"]],
         ["pg_2","P2",["aux","trigger_active"]],
-        ["pg_3","P3",["lpg_colour","decay"]],
-        ["pg_4","Mod",["mod_timbre","mod_fm","mod_morph"]], 
+        ["pg_3","P3",["lpg_colour","decay_internal"]],
         ["pg_env","Amp Env",["attack","decay","sustain","release"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
         ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
-        ["pg_misc","Misc",["envpitch","noise"]]
+        ["pg_misc","Misc",["envpitch","noise"]],
+        ["pg_4","Mac Mod",["mod_timbre","mod_fm","mod_morph"]]
     ]
 }
 
