@@ -14,7 +14,7 @@
 #X msg 876 169 mod_fm \$1;
 #X msg 899 192 mod_morph \$1;
 #X msg 852 146 mod_timbre \$1;
-#X msg 598 204 trigger \$1;
+#X msg 628 225 trigger \$1;
 #X obj 679 72 r harmonics-\$1;
 #X obj 734 45 r timbre-\$1;
 #X obj 780 87 r morph-\$1;
@@ -42,6 +42,7 @@
 #X obj 355 411 *~ 0;
 #X obj 525 130 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 0 256;
+#X obj 920 -1 inlet;
 #X connect 1 0 25 0;
 #X connect 4 0 39 0;
 #X connect 4 1 40 0;
@@ -81,3 +82,4 @@
 #X connect 39 0 3 0;
 #X connect 40 0 3 0;
 #X connect 41 0 25 0;
+#X connect 42 0 15 0;
