@@ -33,7 +33,11 @@
         ["bool","aux","Main/Aux",0],        
         ["float","mod_timbre","Mod Timbre",-1,1,0],
         ["float","mod_fm","Mod FM",-1,1,0],
-        ["float","mod_morph","Mod Morph",-1,1,0]       
+        ["float","mod_morph","Mod Morph",-1,1,0],
+        ["float","lfo_timbre","LFO Timbre",-1,1,0],
+        ["float","lfo_morph","LFO Morph",-1,1,0],
+        ["float","env_timbre","Env Timbre",-1,1,0],
+        ["float","env_morph","Env Morph",-1,1,0],        
 
     ],
     "pages" : [ 
@@ -41,6 +45,7 @@
          ["pg_1","P1",["model","harmonics","timbre","morph"]],
         ["pg_2","P2",["aux","trigger_active"]],
         ["pg_3","P3",["lpg_colour","decay_internal"]],
+        ["pg_4","P4",["lfo_timbre","lfo_morph","env_timbre","env_morph"]],
         ["pg_env","Amp Env",["attack","decay","sustain","release"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
         ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
