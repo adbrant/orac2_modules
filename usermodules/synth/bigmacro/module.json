@@ -37,12 +37,11 @@
         ["float","lfo_timbre","LFO Timbre",-1,1,0],
         ["float","lfo_morph","LFO Morph",-1,1,0],
         ["float","env_timbre","Env Timbre",-1,1,0],
-        ["float","env_morph","Env Morph",-1,1,0],        
-
+        ["float","env_morph","Env Morph",-1,1,0]      
     ],
     "pages" : [ 
         ["pg_main","Main",["transpose","tune","volume" ]],
-         ["pg_1","P1",["model","harmonics","timbre","morph"]],
+        ["pg_1","P1",["model","harmonics","timbre","morph"]],
         ["pg_2","P2",["aux","trigger_active"]],
         ["pg_3","P3",["lpg_colour","decay_internal"]],
         ["pg_4","P4",["lfo_timbre","lfo_morph","env_timbre","env_morph"]],
