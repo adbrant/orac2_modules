@@ -48,7 +48,7 @@
 #X obj 420 147 +~ 1.46;
 #X obj 1169 26 inlet~;
 #X obj 1048 306 bang~;
-#X obj 1036 423 snapshot~;
+#X obj 1014 380 snapshot~;
 #X obj 1095 322 +~ 1;
 #X obj 1088 355 *~ 0.5;
 #X obj 1239 28 inlet~;
