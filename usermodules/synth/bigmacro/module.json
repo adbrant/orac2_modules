@@ -50,7 +50,7 @@
         ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
         ["pg_misc","Misc",["envpitch","noise"]],
-        ["pg_4","Mac Mod",["mod_timbre","mod_fm","mod_morph"]]
+        ["pg_5","Mac Mod",["mod_timbre","mod_fm","mod_morph"]]
     ]
 }
 
