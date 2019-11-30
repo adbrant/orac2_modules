@@ -1,0 +1,14 @@
+{
+    "display" : "EQ II-S",
+    "parameters" :  [ 
+        ["pct","thru_gain","Audio Thru Gain",0,100,0],
+        ["pct","lowband","< 150 Hz",0,200,100],
+        ["pct","highband","> 3000 Hz",0,200,100],
+        ["bool","infra_cut","Low-cut (15Hz)",0],
+        ["freq","freq","Crossover",75,7000,1000]
+    ],
+    "pages" : [ 
+        ["pg_eq2s","EQ II-S",[]]
+    ]
+}
+

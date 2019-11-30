@@ -1,0 +1,9 @@
+{
+    "display" : "Oscilloscope",
+    "parameters" :  [ 
+    ],
+    "pages" : [ 
+        ["pg_scope",[]]
+    ]
+}
+

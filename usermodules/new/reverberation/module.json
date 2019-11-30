@@ -1,0 +1,13 @@
+{
+    "display" : "Reverberation",
+    "parameters" :  [ 
+        ["pct","volume","Volume",0,100,0],
+        ["int","liveness","Feedback",0,100,0],
+        ["freq","crossover_frequency","`-> HF",500,7000,3000],
+        ["pct","hf_damping","Damping",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_reverberation","Reverberation",[]]
+    ]
+}
+

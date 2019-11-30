@@ -1,0 +1,19 @@
+{
+    "display" : "EQ IV-S",
+    "parameters" :  [ 
+        ["pct","thru_gain","Audio Thru Gain",0,100,0],
+        ["pct","lowband","< 150 Hz",0,200,100],
+        ["pct","midlowband","150~700 Hz",0,200,100],
+        ["pct","midhighband","700~3000 Hz",0,200,100],
+        ["pct","highband","> 3000 Hz",0,200,100],
+        ["bool","infra_cut","Low-cut (15Hz)",0],
+        ["freq","freq1","Crossover#1",75,300,150],
+        ["freq","freq2","Crossover#2",500,1000,700],
+        ["freq","freq3","Crossover#3",1500,7000,3000]
+    ],
+    "pages" : [ 
+        ["pg_eq4s","EQ IV-S",[]],
+        ["pg_eq4s_param","Configuration",["infra_cut","freq1","freq2","freq3"]]
+    ]
+}
+
