@@ -41,17 +41,15 @@
         ["float","lfospeed-morph","LFO Speed",0.1,15,2],
         ["float","lfospeed-timbre","LFO Speed",0.1,15,2],
         ["int","lfotype-morph","LFO Type",0,5,0],
-        ["int","lfotype-timbre","LFO Type",0,5,0]
-        
+        ["int","lfotype-timbre","LFO Type",0,5,0]        
     ],
     "pages" : [ 
         ["pg_1","Osc",["model","harmonics","timbre","morph"]],
         ["pg_main","Main",["transpose","tune","volume","aux"]], 
         ["timbremod","Timbre Mod",["lfotype-timbre","lfospeed-timbre","lfo_timbre","env_timbre"]],   
-        ["morphmode","Morph Mod",["lfotype-morph","lfospeed-morph","lfo_morph","env_morph"],        
+        ["morphmode","Morph Mod",["lfotype-morph","lfospeed-morph","lfo_morph","env_morph"]],        
         ["pg_env","Amp Env",["attack","decay","sustain","release"]],
         ["pg_fenv","Mod Env",["attack-f","decay-f","sustain-f","release-f"]],
-        
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
         ["pg_misc","Misc",["envpitch","noise"]],
