@@ -37,7 +37,7 @@
         ["float","lfo_timbre","LFO Timbre",-1,1,0],
         ["float","lfo_morph","LFO Morph",-1,1,0],
         ["float","env_timbre","Env Timbre",-1,1,0],
-        ["float","env_morph","Env Morph",-1,1,0]      
+        ["float","env_morph","Env Morph",-1,1,0] ,     
         ["float","lfospeed-morph","LFO Speed",0.1,15,2],
         ["float","lfospeed-timbre","LFO Speed",0.1,15,2],
         ["int","lfotype-morph","LFO Type",0,5,0],
