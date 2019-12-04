@@ -30,7 +30,7 @@
         ["float","morph","Morph",0,100,50],
         ["float","lpg_colour","LPG Colour",0,100,50],
         ["float","decay_internal","Decay",0,100,50], 
-        ["bool","aux","Main/Aux",0],        
+        ["bool","aux","Osc Main/Aux",0],        
         ["float","mod_timbre","Mod Timbre",-1,1,0],
         ["float","mod_fm","Mod FM",-1,1,0],
         ["float","mod_morph","Mod Morph",-1,1,0],
@@ -38,18 +38,25 @@
         ["float","lfo_morph","LFO Morph",-1,1,0],
         ["float","env_timbre","Env Timbre",-1,1,0],
         ["float","env_morph","Env Morph",-1,1,0]      
+        ["float","lfospeed-morph","LFO Speed",0.1,15,2],
+        ["float","lfospeed-timbre","LFO Speed",0.1,15,2],
+        ["int","lfotype-morph","LFO Type",0,5,0],
+        ["int","lfotype-timbre","LFO Type",0,5,0]
+        
     ],
     "pages" : [ 
-        ["pg_main","Main",["transpose","tune","volume" ]],
-        ["pg_1","P1",["model","harmonics","timbre","morph"]],
-        ["pg_2","P2",["aux","trigger_active"]],
-        ["pg_3","P3",["lpg_colour","decay_internal"]],
-        ["pg_4","P4",["lfo_timbre","lfo_morph","env_timbre","env_morph"]],
+        ["pg_1","Osc",["model","harmonics","timbre","morph"]],
+        ["pg_main","Main",["transpose","tune","volume","aux"]], 
+        ["timbremod","Timbre Mod",["lfotype-timbre","lfospeed-timbre","lfo_timbre","env_timbre"]],   
+        ["morphmode","Morph Mod",["lfotype-morph","lfospeed-morph","lfo_morph","env_morph"],        
         ["pg_env","Amp Env",["attack","decay","sustain","release"]],
+        ["pg_fenv","Mod Env",["attack-f","decay-f","sustain-f","release-f"]],
+        
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","filttype"]],
-        ["pg_fenv","Env 2",["attack-f","decay-f","sustain-f","release-f"]],
         ["pg_mod","Mod",["mod_speed","vibrato_depth","tremolo_depth","fmod_depth"]],
         ["pg_misc","Misc",["envpitch","noise"]],
+        ["pg_2","Osc 2",["aux","trigger_active"]],
+        ["pg_3","Osc 3",["lpg_colour","decay_internal"]],
         ["pg_5","Mac Mod",["mod_timbre","mod_fm","mod_morph"]]
     ]
 }

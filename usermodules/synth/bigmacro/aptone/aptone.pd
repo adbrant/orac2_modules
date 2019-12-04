@@ -35,6 +35,10 @@
 #X obj 448 427 sel 1;
 #X obj 508 433 sel 2;
 #X obj 71 72 poly 4 1, f 11;
+#X obj 548 158 lfo/lfo morph-\$1;
+#X obj 685 155 lfo/lfo timbre-\$1;
+#X obj 552 218 s~ lfo-morph-\$1;
+#X obj 679 196 s~ lfo-timbre-\$1;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 1 0 7 0;
@@ -73,3 +77,5 @@
 #X connect 34 0 0 0;
 #X connect 34 1 0 1;
 #X connect 34 2 0 2;
+#X connect 35 0 37 0;
+#X connect 36 0 38 0;
