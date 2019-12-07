@@ -136,6 +136,7 @@
 #X obj 570 59 > 0;
 #X obj 618 91 t b f;
 #X obj 659 130 / 10000;
+#X obj 656 467 *~ 2;
 #X connect 1 0 4 0;
 #X connect 4 0 18 0;
 #X connect 4 1 44 0;
@@ -195,7 +196,7 @@
 #X connect 45 0 24 4;
 #X connect 46 0 47 1;
 #X connect 47 0 29 1;
-#X connect 47 0 28 1;
+#X connect 47 0 70 0;
 #X connect 48 0 50 1;
 #X connect 49 0 51 1;
 #X connect 50 0 51 1;
@@ -222,3 +223,4 @@
 #X connect 68 0 9 0;
 #X connect 68 1 69 0;
 #X connect 69 0 9 1;
+#X connect 70 0 28 1;
