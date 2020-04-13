@@ -1,0 +1,9 @@
+f60d252be64b6628708bb67249cd1413923e6420  fusion/notein_mono.pd
+bf13f6cf4a88b692b683b47cea296e62bb1ffb97  fusion/deploy.sh
+f1fea0d5d5dcb343ebaee0779b187a9f7a2835dc  fusion/plts~.pd_linux
+836a401cb98cd0c85083394944e4ff3897a8a02b  fusion/plts~.dll
+9d7b38427f166a949707917b89c88a539591d583  fusion/plts~-test.pd
+63f9bd44133e4e077713360459b906c01b704d2a  fusion/plts~-abs.pd
+15f8f01c0bf758cc3a48e96c8a1d6e04676cdae8  fusion/module.json
+ca7da5870f0dd983bbb9996cee150bae5887a6c7  fusion/module.pd
+e887237241229c7084ffe399c8d578f6b26a19f8  fusion/plts~-help.pd

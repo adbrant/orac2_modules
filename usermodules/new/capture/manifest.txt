@@ -1,0 +1,3 @@
+f3a0a18cff22c19a49cd98ced141d8ed959be979  capture/deploy.sh
+103e30228a558627be835206476fedabf10eacbe  capture/module.json
+0187e980e31bd03b5fa1f7aab5ac770c8b43eafc  capture/module.pd

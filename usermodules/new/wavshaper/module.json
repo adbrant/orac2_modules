@@ -1,0 +1,18 @@
+{
+    "display" : "Wav.shaper",
+    "parameters" :  [ 
+        ["pct", "inGain", "In Gain", 0, 200, 50],
+        ["pct", "outGain", "Out Gain", 0, 100, 100],
+        ["int", "wave", "Waveform", 1, 25, 1],
+        ["pct", "dw", "Dry/Wet", 0, 100, 100],
+        ["pct", "dcOffset", "DC-Offset", 0, 100, 0],
+        ["pct", "hpf", "High-Pass", 0, 100, 0],
+        ["pct", "lpf", "Low-Pass", 0, 100, 100],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["inGain", "outGain", "wave", "dw"]],
+        ["pg_extra","Extra",["dcOffset", "hpf", "lpf"]]
+    ]
+}
+

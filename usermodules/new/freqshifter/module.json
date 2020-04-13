@@ -1,0 +1,14 @@
+{
+    "display" : "FreqShifter",
+    "parameters" :  [ 
+    	["pct", "freq", "Shift", 0, 100, 0],
+    	["freq", "lfofreq", "LFO Freq", 0, 220, 2],
+    	["pct", "lfoamount", "LFO Amount", 0, 100, 0],
+    	["pct", "dw", "Dry/Wet", 0, 100, 0],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main", "Main",["freq", "lfofreq", "lfoamount", "dw"]]
+    ]
+}
+

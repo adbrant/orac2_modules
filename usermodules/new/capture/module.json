@@ -1,0 +1,11 @@
+{
+    "name" : "capture",
+    "display" : "Capture",
+    "parameters" :  [ 
+        ["time","reaction","Reaction",0.1,1000,100],
+        ["pct","thru_gain","Audio Thru Gain",0,200,0]
+    ],
+    "pages" : [ 
+        ["pg_capture","Capture",["reaction"]]
+    ]
+}
