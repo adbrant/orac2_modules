@@ -1,0 +1,3 @@
+1e8c3bd33e3f207efa3d3ad2763ce03fa2ccf22c  parallel3/deploy.sh
+dbdc28de2673268c74f97fb9052319556aca2a7d  parallel3/module.json
+a026e3c5eec443874ce5ecef5b72e68f10fdfb9a  parallel3/module.pd

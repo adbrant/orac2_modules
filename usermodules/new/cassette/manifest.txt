@@ -1,0 +1,16 @@
+9f3a1164bbd2ca6751897a87b98da8ddab3de21b  cassette/soundfile_info.pd_linux
+995cfd2ac5eb689b6d22198a4a675fc6e741c10f  cassette/soundshare_rec~.pd
+1996d4a1ddc25b39174e48b9c524f264baa3a326  cassette/folder_list.pd_linux
+111b361fb34d76cd20812b9255552668feb3680a  cassette/deploy.sh
+c2e049b6ed229d952315a0709eb295f4cec08310  cassette/s2l.pd_linux
+2ff9f2dc03bd62c290be8d58960e04396d41d6f9  cassette/s2l.dll
+24ca15f149c338788488e3a892e1aec8ba25af6e  cassette/soundshare_select.pd
+071a5b67bba421deee51081ab669c9c3762ee772  cassette/folder_list.dll
+912766cfa79bbb5e99518057c973dbd8995dbd74  cassette/soundshare_recsync~.pd
+bb2b7780712088f455b887c6d1a4bb6cec6e89f7  cassette/folder_list-help.pd
+c7e7e5f351d0bb06f96c2de4a7240a7aa022bc34  cassette/tabread2.pd
+67dee064d32cb451a32b9168bb29fc9500393443  cassette/s2l-help.pd
+f715b313e2ae0707217813376a4a3c3b9329533a  cassette/module.json
+8792edcf61ac9aa093cfcc57dc1d55cbab669bc9  cassette/module.pd
+ca2ff7961e153488cfc4e13b638cee790cd14f98  cassette/soundshare_play~.pd
+b7d306039d22cf89b597f61f22303c20877059b7  cassette/soundfile_info-help.pd

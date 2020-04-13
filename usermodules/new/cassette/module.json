@@ -1,0 +1,12 @@
+{
+    "display" : "Cassette",
+    "parameters" :  [ 
+        ["pct","force","Force",1,200,50],
+        ["float","precision","Precision",-50,50,0],
+        ["int","pitch","Pitch",-11,11,0],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_cassette","Cassette",[]]
+    ]
+}
