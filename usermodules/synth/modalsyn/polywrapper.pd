@@ -1,0 +1,14 @@
+#N canvas 441 300 450 300 12;
+#X obj 148 118 pack 0 0 0;
+#X obj 140 36 inlet;
+#X obj 142 223 outlet~;
+#X obj 146 61 poly \$2 1;
+#X obj 141 89 - 1;
+#X obj 148 143 clone voicewrapper \$2 \$1;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 1 0 1;
+#X connect 3 2 0 2;
+#X connect 4 0 0 0;
+#X connect 5 0 2 0;
