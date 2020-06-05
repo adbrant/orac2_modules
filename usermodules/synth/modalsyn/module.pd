@@ -8,7 +8,7 @@
 #X obj 424 185 r auxIn-\$1;
 #X obj 423 208 r expIn-\$1;
 #X obj 423 233 r fsIn-\$1;
-#N canvas 76 73 1364 725 synth 1;
+#N canvas 76 73 1364 725 synth 0;
 #X obj 196 279 *~ 0.3;
 #X obj 238 384 outlet~;
 #X obj 16 55 inlet;
@@ -73,8 +73,6 @@
 #X obj 485 559 s~ excitesignal-\$1;
 #X connect 0 0 1 0;
 #X connect 0 0 9 0;
-#X connect 2 0 11 0;
-#X connect 3 0 12 0;
 #X connect 9 0 12 1;
 #X connect 9 0 11 1;
 #X connect 11 0 4 0;

@@ -1,6 +1,6 @@
 {
     "name" : "spiraldelay",
-    "display" : "SpiralFelay",
+    "display" : "SpiralDelay",
     "parameters" :  [ 
         ["int","wdelay_semi","Semitones",-24,24,0],
         ["int","wdelay_cent","Cents",-50,50,0],

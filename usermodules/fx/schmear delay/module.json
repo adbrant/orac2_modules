@@ -1,0 +1,15 @@
+{
+    "display" : "Shmear",
+    "parameters" :  [ 
+        ["pct","shmear_mix","Mix",0,100,50],
+        ["time","shmear_delay","Delay",1,5000,500],
+        ["pct","shmear_fb","Feedback",0,100,20],
+        ["time","shmear_shmear","Shmear",1,500,300],
+		["freq","shmear_dark","Darkness",500,1500,950]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["shmear_mix","shmear_delay","shmear_fb","shmear_shmear"]],
+		["pg_two","Other",["shmear_dark"]]
+    ]
+}
+

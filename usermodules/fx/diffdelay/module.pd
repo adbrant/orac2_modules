@@ -1,0 +1,15 @@
+#N canvas 16 4 1358 659 10;
+#X obj 304 186 r notesIn-\$1;
+#X obj 304 671 s notesOut-\$1;
+#X obj 38 179 inlet~ inL-\$1;
+#X obj 135 186 inlet~ inR-\$1;
+#X obj 27 671 outlet~ outL-\$1;
+#X obj 136 671 outlet~ outR-\$1;
+#X obj 445 180 r auxIn-\$1;
+#X obj 423 208 r expIn-\$1;
+#X obj 456 225 r fsIn-\$1;
+#X obj 53 547 diffreverb \$1;
+#X connect 2 0 9 0;
+#X connect 3 0 9 1;
+#X connect 9 0 4 0;
+#X connect 9 1 5 0;
