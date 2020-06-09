@@ -1,0 +1,23 @@
+{
+    "name" : "subharmonicosc",
+    "display" : "SubharmonicOSC",
+    "parameters" :  [ 
+        ["int","osc1wave","Wave",1,3,1],
+	["pct","pw","Pulse Width",1,99,50],
+        ["pct","osc1mix","Osc1",0,100,50],
+        ["pct","sub1mix","Sub1",0,100,0],
+        ["pct","sub2mix","Sub2",0,100,0],
+        ["int","div1","Sub1 Div",1,12,2],
+        ["int","div2","Sub2 Div",1,12,2],
+	["time","attack","Attack",2,1000,50],        
+        ["time","decay","Decay",2,1000,100],        
+        ["pct","sustain","Sustain",0,100,50],        
+        ["time","release","Release",2,1000,50]        
+    ],
+    "pages" : [ 
+        ["pg_adsr","ADSR",["attack","decay","sustain","release"]],
+	["pg_mix1","Mix",["osc1mix","sub1mix","sub2mix"]],
+	["pg_pitch1","Osc",["osc1wave","div1","div2","pw"]]
+    ]
+}
+

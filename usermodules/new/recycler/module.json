@@ -1,0 +1,29 @@
+{
+    "display" : "Recycler",
+    "parameters" :  [ 
+        ["pct","dly_dw","Dry/Wet",0,100,50],
+        ["time","dly_time","Time",1,1000,250],
+        ["pct","dly_fb","Feedback",0,100,60],
+        ["freq","dly_hip","HPF",0,500,0],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0],
+        ["pct", "freq", "Shift", 0, 100, 0],
+    	["freq", "lfofreq", "LFO Freq", 0, 220, 2],
+        ["pct", "lfoamount", "LFO Amount", 0, 100, 0],
+        ["pct", "shifterdw", "Dry/Wet", 0, 100, 100],
+        ["pct", "sr", "Sample Rate", 1, 100, 100],
+        ["int", "bitdepth", "Bit-Depth", 2, 24, 24],
+        ["pct", "crusherlpf", "LPF", 0, 100, 0],
+        ["float", "thresh", "Threshold", -60, 0, -2],
+        ["float", "ratio", "Ratio", 2, 20, 8],
+        ["float", "response", "Response", 0, 500, 200],
+        ["float", "lookahead", "Lookahead", 0, 10, 10],
+        ["float", "gain", "Gain", 0, 20, 0]
+    ],
+    "pages" : [ 
+        ["pg_main","Delay",["dly_dw","dly_time","dly_fb","dly_hip"]],
+        ["pg_shifter","Shifter",["freq","lfofreq","lfoamount"]],
+        ["pg_crusher","Crusher",["sr", "bitdepth", "crusherlpf"]],
+        ["pg_comp","Ducking",["thresh", "gain"]]
+    ]
+}
+
