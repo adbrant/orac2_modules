@@ -1,0 +1,22 @@
+{
+    "display" : "TB-Clone",
+    "parameters" :  [ 
+        ["float","cutoff","Cutoff",0,120,60],
+        ["float","res","Resonance",0,1,0.8],
+        ["float","env","Env Mod",0,120,30],
+        ["int","style","Wave",0,4,0],
+        ["float","attack","Attack",0,1,0.1],
+        ["float","decay","Decay",0,1,0.3],
+        ["float","sustain","Sustain",0,1,0.6],
+        ["float","release","Release",0,1,0.2],
+        ["float","detune","Detune",0,0.25,0],
+        ["int","ep","Env. Polarity",0,1,1],
+        ["int","transpose","Octave",0,2,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["cutoff","res","env","style"]],
+        ["pg_env","Envelope",["attack","decay","sustain","release"]],
+        ["pg_other","Other",["detune", "ep", "transpose"]]
+    ]
+}
+

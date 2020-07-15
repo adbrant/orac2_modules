@@ -1,0 +1,59 @@
+#N canvas 719 397 600 392 10;
+#X obj 11 89 readsf~;
+#X obj 11 27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj -8 112 s~ inL;
+#X obj 34 112 s~ inL;
+#X obj 188 29 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8400 1;
+#X obj 235 29 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 9600 1;
+#X obj 280 29 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 200 1;
+#X obj 323 29 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 188 175 s knob1;
+#X obj 233 175 s knob2;
+#X obj 278 175 s knob3;
+#X obj 325 175 s knob4;
+#X obj -35 155 catch~ outL;
+#X obj 42 156 catch~ outR;
+#X obj 21 195 dac~;
+#X msg 11 57 open guitar.wav \, 1;
+#X msg -39 56 0;
+#X obj 386 174 s aux;
+#X msg 386 135 0;
+#X msg 420 136 1;
+#X obj 191 230 r led;
+#X floatatom 191 265 5 0 0 0 - - -;
+#X obj 14 234 r screenLine1;
+#X obj 24 244 r screenLine2;
+#X obj 34 254 r screenLine3;
+#X obj 43 265 r screenLine4;
+#X obj 54 274 r screenLine5;
+#X obj 15 314 print;
+#X msg 383 49 0;
+#X msg 417 50 1;
+#X obj 383 88 s fs;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 0 1 1 0;
+#X connect 1 0 15 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 6 0 10 0;
+#X connect 7 0 11 0;
+#X connect 12 0 14 0;
+#X connect 13 0 14 1;
+#X connect 15 0 0 0;
+#X connect 16 0 0 0;
+#X connect 18 0 17 0;
+#X connect 19 0 17 0;
+#X connect 20 0 21 0;
+#X connect 22 0 27 0;
+#X connect 23 0 27 0;
+#X connect 24 0 27 0;
+#X connect 25 0 27 0;
+#X connect 26 0 27 0;
+#X connect 28 0 30 0;
+#X connect 29 0 30 0;
