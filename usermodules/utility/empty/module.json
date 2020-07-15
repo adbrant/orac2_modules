@@ -1,5 +1,6 @@
 {
-    "display" : "",
+    "name" : "Empty",
+    "display" : "Empty",
     "parameters" :  [
     ],
     "pages" : [ 
