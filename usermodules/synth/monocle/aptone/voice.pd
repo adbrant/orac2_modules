@@ -63,7 +63,7 @@
 #X connect 22 0 12 1;
 #X restore 538 504 pd filter;
 #X obj 525 581 *~;
-#N canvas 0 23 955 690 osc1 1;
+#N canvas 0 23 955 690 osc1 0;
 #X obj 615 149 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 374 103 / 100;
@@ -156,7 +156,7 @@
 #X connect 16 0 2 0;
 #X connect 16 0 4 0;
 #X restore 420 331 pd osc2;
-#N canvas 0 23 703 492 mix 1;
+#N canvas 0 23 703 492 mix 0;
 #N canvas 0 23 450 300 noise 0;
 #X obj 233 53 r noise-\$1;
 #X obj 197 155 *~ 0;
@@ -244,12 +244,14 @@
 #X obj 882 520 / 10;
 #X obj 871 487 r amod_depth-\$1;
 #X obj 630 131 *~ 5;
+#X obj 750 659 lop~ 5;
+#X obj 332 66 t b f;
 #X connect 0 0 5 0;
-#X connect 2 0 3 1;
+#X connect 2 0 32 0;
 #X connect 3 0 1 0;
 #X connect 4 0 2 0;
 #X connect 5 0 26 0;
-#X connect 6 0 5 1;
+#X connect 6 0 33 0;
 #X connect 7 0 16 1;
 #X connect 8 0 15 1;
 #X connect 9 0 10 1;
@@ -287,3 +289,6 @@
 #X connect 29 0 4 1;
 #X connect 30 0 29 0;
 #X connect 31 0 20 2;
+#X connect 32 0 3 1;
+#X connect 33 0 5 0;
+#X connect 33 1 5 1;

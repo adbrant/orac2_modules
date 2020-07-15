@@ -35,8 +35,8 @@
 	["float","pwmspeed","PWM Speed",0.1,5,1], 
 	["float","pwmdepth","PWM Depth",0,1,0],
 	["int","portamento","Portamento",0,500,25],
-	["bool","lfosync","LFO Trig",0],
-	["bool","latch","Latchs",0]
+	["int","lfosync","Sync",0,2,0],
+	["bool","latch","Latch",0]
    
     ],
     "pages" : [ 
@@ -44,11 +44,12 @@
         ["pg_osc1","Osc 1",["bp_wave-osc1", "osc1_tune","osc1_lfo","osc1_fm"]], 
         ["pg_osc2","Osc 2",["bp_wave-osc2", "osc2_tune","osc2_lfo","osc2_coarse"]],
         ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","fmod_depth"]],
-        ["pg_mod","Mod",["lfotype", "lfospeed","pwmspeed","pwmdepth"]],
+        ["pg_mod","Mod",["lfotype", "lfospeed","lfosync"]],
         ["pg_mix","Mix",["osc1_mix", "osc2_mix","ring_mix" ,"noise"]],
         ["pg_env","Amp Env",["attack","decay","sustain","release"]],
         ["pg_fenv","Mod Env",["attack-f","decay-f","sustain-f","release-f"]],
-        ["pg_misc","Misc",["ext","amod_depth","portamento","lfosync"]]
+	["pg_pwm","PWM",["pwmspeed","pwmdepth"]],
+        ["pg_misc","Misc",["ext","amod_depth","portamento"]]
     ]
 }
 
