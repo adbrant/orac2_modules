@@ -40,14 +40,10 @@
 	["int","detune-2","Detune 2",-50,50,0],
 	["int","detune-3","Detune 3",-50,50,0],
 	["int","detune-4","Detune 4",-50,50,0],
-	["float","saw-1","Saw 1",0,1,0],
-        ["float","saw-2","Saw 2",0,1,0],
-	["float","saw-3","Saw 3",0,1,0],
-        ["float","saw-4","Saw 4",0,1,0],
-	["float","sqr-1","Sqr 1",0,1,0],
-        ["float","sqr-2","Sqr 2",0,1,0],
-	["float","sqr-3","Sqr 3",0,1,0],
-        ["float","sqr-4","Sqr 4",0,1,0],
+	["float","offset-1","Offset 1",-10,10,0],
+	["float","offset-2","Offset 2",-10,10,0],
+	["float","offset-3","Offset 3",-10,10,0],
+	["float","offset-4","Offset 4",-10,10,0],
 	["float","pitch_lfo-1","LFO Pitch 1",-10,10,0],
 	["float","pitch_lfo-2","LFO Pitch 2" ,-10,10,0],
 	["float","pitch_lfo-3","LFO Pitch 3",-10,10,0],
@@ -56,28 +52,16 @@
 	["float","amp_lfo-2","LFO Amp 2",-10,10,0],
 	["float","amp_lfo-3","LFO Amp 3",-10,10,0],
 	["float","amp_lfo-4","LFO Amp 4",-10,10,0],
-	["int","algo","Algo",1,8,1],
-	["float","loop_fb","Total fb",0,1,0],
-	["float","global_drift","Op. Drift",0,1,0],
-        ["float","attack-f","Attack",5,3000,100],
-        ["float","decay-f","Decay",5,3000,200],
-        ["float","sustain-f","sustain",0,1,0.7],
-        ["float","release-f","Release",5,3000,300],
-        ["float","envfilt","Filter Env",0,1,0.5],
-        ["float","filt_cutoff","Cutoff",0,32,8],
-        ["float","filt_q","Resonance",1,5,2],
-        ["float","fmod_depth","Filt. LFO",-10,10,0]
+	["int","algo","Algo",1,9,1],
+	["float","loop_fb","Total fb",0,1,0]
    
     ],
     "pages" : [ 
         ["pg_main","Main",["transpose","volume","latch","algo"]],
-	["pg_hack","Hacks",["loop_fb", "global_drift"]],
 	["pg_coarse","Coarse",["ratio-1", "ratio-2","ratio-3", "ratio-4"]],  
 	["pg_fine","Fine",["fine-1", "fine-2","fine-3", "fine-4"]],  
 	["pg_detune","Detune",["detune-1", "detune-2","detune-3", "detune-4"]],
 	["pg_level","Level",["level-1", "level-2","level-3", "level-4"]],
-        ["pg_filt","Filter",["envfilt","filt_cutoff","filt_q","fmod_depth"]],
-        ["pg_fenv","Mod Env",["attack-f","decay-f","sustain-f","release-f"]],
         ["pg_env1","Env 1",["attack-1","decay-1","sustain-1","release-1"]],
  	["pg_env2","Env 2",["attack-2","decay-2","sustain-2","release-2"]],
         ["pg_env3","Env 3",["attack-3","decay-3","sustain-3","release-3"]],
@@ -85,8 +69,8 @@
 	["pg_mod","Mod",["lfotype", "lfospeed"]],
 	["pg_lfo1", "Pitch LFO", ["pitch_lfo-1","pitch_lfo-2","pitch_lfo-3","pitch_lfo-4"]],
 	["pg_lfo2", "Amp LFO", ["amp_lfo-1","amp_lfo-2","amp_lfo-3","amp_lfo-4"]],
-	["pg_saw","Saw Shape",["saw-1", "saw-2","saw-3", "saw-4"]],
-	["pg_sqr","Sqr Shape",["sqr-1", "sqr-2","sqr-3", "sqr-4"]]
+	["pg_offset","Hz Offset",["offset-1", "offset-2","offset-3", "offset-4"]],
+	["pg_hack","Hacks",["loop_fb"]]
 
 
     ]

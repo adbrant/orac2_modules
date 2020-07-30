@@ -44,7 +44,8 @@
 #X obj 506 358 lop~ 5000;
 #X obj 458 216 voice_wrap \$1;
 #X obj 577 218 voice_wrap \$1;
-#X obj 478 61 poly 3 1, f 11;
+#X obj 478 61 poly 4 1, f 11;
+#X obj 687 221 voice_wrap \$1;
 #X connect 0 0 41 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
@@ -77,6 +78,7 @@
 #X connect 25 2 31 0;
 #X connect 25 2 40 0;
 #X connect 25 3 32 0;
+#X connect 25 3 42 0;
 #X connect 27 0 28 0;
 #X connect 28 0 10 0;
 #X connect 28 0 38 0;
@@ -89,3 +91,4 @@
 #X connect 41 0 24 0;
 #X connect 41 1 24 1;
 #X connect 41 2 24 2;
+#X connect 42 0 28 1;
