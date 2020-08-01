@@ -8,7 +8,7 @@
 #X obj 424 185 r auxIn-\$1;
 #X obj 423 208 r expIn-\$1;
 #X obj 423 233 r fsIn-\$1;
-#N canvas 76 73 1364 725 synth 0;
+#N canvas 76 73 1364 725 synth 1;
 #X obj 196 279 *~ 0.3;
 #X obj 238 384 outlet~;
 #X obj 16 55 inlet;
@@ -18,7 +18,7 @@
 #X obj 580 267 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 314 327 / 25;
-#X obj 106 193 polywrapper \$1 64;
+#X obj 106 193 polywrapper \$1 16;
 #X connect 0 0 3 0;
 #X connect 2 0 8 0;
 #X connect 3 0 5 0;
