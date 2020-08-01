@@ -1,0 +1,43 @@
+{
+    "name" : "ProgArp",
+    "display" : "ProgArp",
+    "parameters" :  [ 
+        ["bool","otto_play","Play",1],
+        ["bool","otto_bass_on","Bass",1],
+        ["int","otto_bass_vel","Velocity",1,127,100],
+        ["time","otto_bass_len","Length",20,2000,500],
+        ["int","otto_bass_oct","Octave",-2,2,0],
+        ["bool","otto_hold","Hold",0],
+	["int","speed","Speed",0,4,3],
+	["int","maxoct","Max. Oct",0,3,1],
+	["int","length","Length",1,16,16],
+	["int","step-0","Index",0,12,1],
+	["int","step-1","Index",0,12,2],
+	["int","step-2","Index",0,12,3],
+	["int","step-3","Index",0,12,4],
+	["int","step-4","Index",0,12,1],
+	["int","step-5","Index",0,12,2],
+	["int","step-6","Index",0,12,1],
+	["int","step-7","Index",0,12,2],
+	["int","step-8","Index",0,12,3],
+	["int","step-9","Index",0,12,4],
+	["int","step-10","Index",0,12,3],
+	["int","step-11","Index",0,12,4],
+	["int","step-12","Index",0,12,5],
+	["int","step-13","Index",0,12,4],
+	["int","step-14","Index",0,12,3],
+	["int","step-15","Index",0,12,2],
+	["int","randomize","Randomize",0,1,0]
+              
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["otto_play","otto_hold","speed","length"]],
+        ["pg_bass","Notes",["otto_bass_vel","otto_bass_len","otto_bassss_oct","maxoct"]],
+	["pg_patt1","Patt 1",["step-0","step-1","step-2","step-3"]],
+	["pg_patt2","Patt 2",["step-4","step-5","step-6","step-7"]],	
+   	["pg_patt3","Patt 3",["step-8","step-9","step-10","step-11"]],
+    	["pg_patt4","Patt 4",["step-12","step-13","step-14","step-15"]],
+	["pg_rand","Randomize",["randomize"]]
+]
+}
+
