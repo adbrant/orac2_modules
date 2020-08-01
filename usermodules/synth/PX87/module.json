@@ -66,7 +66,7 @@
  	["pg_env2","Env 2",["attack-2","decay-2","sustain-2","release-2"]],
         ["pg_env3","Env 3",["attack-3","decay-3","sustain-3","release-3"]],
  	["pg_env4","Env 4",["attack-4","decay-4","sustain-4","release-4"]],
-	["pg_mod","Mod",["lfotype", "lfospeed"]],
+	["pg_mod","Mod",["lfotype", "lfospeed","lfosync"]],
 	["pg_lfo1", "Pitch LFO", ["pitch_lfo-1","pitch_lfo-2","pitch_lfo-3","pitch_lfo-4"]],
 	["pg_lfo2", "Amp LFO", ["amp_lfo-1","amp_lfo-2","amp_lfo-3","amp_lfo-4"]],
 	["pg_offset","Hz Offset",["offset-1", "offset-2","offset-3", "offset-4"]],
