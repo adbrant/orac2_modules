@@ -5,7 +5,7 @@
         ["bool","otto_play","Play",1],
         ["bool","otto_bass_on","Bass",1],
         ["int","otto_bass_vel","Velocity",1,127,100],
-        ["time","otto_bass_len","Length",20,2000,500],
+        ["time","otto_bass_len","Length",20,2000,250],
         ["int","otto_bass_oct","Octave",-2,2,0],
         ["bool","otto_hold","Hold",0],
 	["int","speed","Speed",0,4,3],
