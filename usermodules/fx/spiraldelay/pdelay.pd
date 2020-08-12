@@ -106,7 +106,7 @@
 #X obj 1106 258 int;
 #X obj 1130 313 * 1;
 #X obj 1141 359 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 2000 256;
+10 -262144 -1 -1 968 256;
 #X obj 1132 278 max 1;
 #X obj 1201 122 r wdelay_temposync-\$1;
 #X obj 1058 46 r wdelay_len_raw-\$1;
@@ -119,7 +119,7 @@
 #X obj 1217 148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 1187 301 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 4 256;
+10 -262144 -1 -1 0 256;
 #X obj 1217 358 s aux-label-\$1;
 #X msg 1218 326 Beats: \$1;
 #X obj 833 473 lop~ 10;
@@ -130,11 +130,10 @@
 #X obj 727 230 wdel \$1 3;
 #X obj 1025 567 min 100;
 #X obj 1034 593 / 100;
-#N canvas 0 50 1366 664 smoothswitch 0;
+#N canvas 0 50 1366 664 smoothswitch 1;
 #X obj 240 75 r wdelay_len-\$1;
 #X obj 158 452 delread~ del_line-\$1 8000;
 #X obj 220 219 f 0;
-#X obj 248 122 delay 1000;
 #X obj 441 455 delread~ del_line-\$1 8000;
 #X obj 371 385 sig~ 0;
 #X obj 230 266 change -1;
@@ -149,28 +148,36 @@
 #X obj 444 522 *~;
 #X obj 282 520 *~;
 #X obj 382 484 -~ 1;
+#X floatatom 209 420 5 0 0 0 - - -;
+#X floatatom 469 401 5 0 0 0 - - -;
+#X obj 255 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 267 154 delay 100;
 #X connect 0 0 2 1;
-#X connect 0 0 3 0;
-#X connect 1 0 15 0;
-#X connect 2 0 6 0;
-#X connect 3 0 2 0;
-#X connect 4 0 14 0;
-#X connect 5 0 12 0;
-#X connect 6 0 7 0;
-#X connect 7 0 11 0;
-#X connect 7 0 10 0;
-#X connect 7 1 8 0;
-#X connect 8 0 9 0;
-#X connect 8 0 11 1;
-#X connect 8 0 5 0;
-#X connect 9 0 10 1;
-#X connect 10 0 4 0;
-#X connect 11 0 1 0;
-#X connect 12 0 16 0;
-#X connect 12 0 15 1;
-#X connect 14 0 13 0;
-#X connect 15 0 13 0;
-#X connect 16 0 14 1;
+#X connect 0 0 18 0;
+#X connect 1 0 14 0;
+#X connect 2 0 5 0;
+#X connect 3 0 13 0;
+#X connect 4 0 11 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 6 0 9 0;
+#X connect 6 1 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 10 1;
+#X connect 7 0 4 0;
+#X connect 8 0 9 1;
+#X connect 9 0 3 0;
+#X connect 9 0 17 0;
+#X connect 10 0 1 0;
+#X connect 10 0 16 0;
+#X connect 11 0 15 0;
+#X connect 11 0 14 1;
+#X connect 13 0 12 0;
+#X connect 14 0 12 0;
+#X connect 15 0 13 1;
+#X connect 18 0 19 0;
+#X connect 19 0 2 0;
 #X restore 700 523 pd smoothswitch;
 #X obj 232 167 r wdelay_freezeparam-\$1;
 #X floatatom 251 202 5 0 0 0 - - -;
