@@ -415,7 +415,7 @@ use internal or MIDI clock if present.;
 #X obj 325 113 r master-ticks-\$1;
 #X msg 447 234 tick \$1;
 #X obj 372 187 t f f;
-#X obj 348 225 s master-ticks;
+#X obj 348 224 s master-ticks;
 #X obj 360 458 s aux-label-\$1;
 #N canvas -3 152 1366 725 params 0;
 #X obj 116 52 r mc_beats-\$1;
@@ -603,7 +603,7 @@ use internal or MIDI clock if present.;
 #X obj 875 286 sf;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-clicktab 456 float 3;
-#A 0 -3.05176e-05 0.000793457 0.000762939 0.000854492 0.00213623 0.00146484
+#A 0 -3.05176e-005 0.000793457 0.000762939 0.000854492 0.00213623 0.00146484
 0.0010376 0.00119019 -0.000457764 -0.000579834 -0.000366211 -0.00195313
 -0.00189209 -0.00167847 -0.00234985 -0.00177002 -0.00180054 -0.000915527
 0.00216675 0.00650024 0.0067749 -0.00378418 -0.00524902 0.00823975
@@ -713,6 +713,7 @@ use internal or MIDI clock if present.;
 #X obj 727 287 r swing16-\$1;
 #X msg 721 267 swing 8 \$1;
 #X msg 734 309 swing 16 \$1;
+#X obj 445 206 ppq24_96;
 #X connect 0 0 3 0;
 #X connect 0 0 52 0;
 #X connect 3 0 5 0;
@@ -758,7 +759,7 @@ use internal or MIDI clock if present.;
 #X connect 33 0 48 0;
 #X connect 34 0 23 0;
 #X connect 35 0 36 0;
-#X connect 35 1 34 0;
+#X connect 35 1 67 0;
 #X connect 38 0 23 0;
 #X connect 39 0 23 0;
 #X connect 42 0 43 0;
@@ -784,3 +785,4 @@ use internal or MIDI clock if present.;
 #X connect 64 0 66 0;
 #X connect 65 0 23 0;
 #X connect 66 0 23 0;
+#X connect 67 0 34 0;
