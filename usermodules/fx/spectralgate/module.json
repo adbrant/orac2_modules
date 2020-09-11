@@ -4,10 +4,14 @@
         ["pct","sg_thresh","Threshold",0,100,50],
         ["pct","sg_attack","Attack",0,100,50],
         ["pct","sg_decay","Decay",0,100,50],
+	["bool","gatemode","Gate",1],
+        ["pct","gain","Audio Gain",0,100,50],
         ["pct","thru_gain","Audio Thru Gain",0,100,0]
     ],
     "pages" : [ 
-        ["pg_main","Main",["sg_thresh","sg_attack","sg_decay"]]
+        ["pg_main","Main",["sg_thresh","sg_attack","sg_decay","gatemode"]],
+	["pg_2","Volume",["gain"]]
+
     ]
 }
 

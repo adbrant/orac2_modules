@@ -1,0 +1,69 @@
+#N canvas 0 50 1360 725 10;
+#X obj 261 133 +~;
+#X obj 54 29 mtof;
+#X obj 26 35 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 76 125 nbx 8 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 155.563 256;
+#X obj 85 161 pow -1;
+#X obj 94 234 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 283.486 256;
+#X obj 86 188 * 44100;
+#X obj 111 281 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0.553683 256;
+#X obj 163 216 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0.00642824 256;
+#X obj 100 265 / 512;
+#X obj 119 321 pow -1;
+#X obj 194 349 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1.80609 256;
+#X obj 44 291 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 113 364 expr log($f1)/log(2);
+#X obj 81 413 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0.852869 256;
+#X obj 275 339 int;
+#X obj 267 401 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 222 481 min 5;
+#X obj 260 506 max 0;
+#X obj 187 149 *~ 0.1;
+#X obj 606 493 * 2;
+#X obj 268 167 *~ 512;
+#X obj 189 442 + 0.8;
+#X obj 112 38 inlet;
+#X obj 514 13 inlet~;
+#X obj 187 583 outlet~;
+#X obj 394 78 +~ 0.5;
+#X obj 408 139 wrap~;
+#X obj 282 91 +~ 0.5;
+#X obj 260 216 tabread4~ wavemap2-\$1;
+#X connect 0 0 21 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 6 0 5 0;
+#X connect 7 0 10 0;
+#X connect 9 0 7 0;
+#X connect 10 0 11 0;
+#X connect 10 0 13 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 0 22 0;
+#X connect 15 0 16 0;
+#X connect 16 0 20 0;
+#X connect 17 0 18 0;
+#X connect 18 0 15 0;
+#X connect 20 0 0 1;
+#X connect 21 0 29 0;
+#X connect 22 0 17 0;
+#X connect 23 0 3 0;
+#X connect 24 0 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 28 0 0 0;
+#X connect 29 0 19 0;
+#X connect 29 0 25 0;
