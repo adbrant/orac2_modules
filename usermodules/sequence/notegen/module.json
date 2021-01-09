@@ -14,7 +14,7 @@
         ["float","ng_lenmin","Len Min",1,3000,200],
         ["float","ng_lenmax","Len Min",1,3000,1000],
         ["int","ng_midithru","Midi Thru",0,1,0],
-        ["int","ng_note0","C",50,100,100],
+        ["int","ng_note0","C",0,100,50],
         ["int","ng_note1","Db",0,100,0],
         ["int","ng_note2","D",0,100,0],
         ["int","ng_note3","Eb",0,100,0],
