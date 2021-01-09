@@ -1,4 +1,4 @@
-#N canvas -44 214 1351 720 10;
+#N canvas 0 78 1351 720 10;
 #X text 451 49 note messages;
 #X obj 405 65 inlet;
 #X obj 536 609 outlet~;
@@ -14,7 +14,7 @@
 #X obj 549 574 *~;
 #X obj 649 344 *~ 0.1;
 #X obj 666 53 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0.405405 256;
+-262144 -1 -1 0 256;
 #X obj 764 382 *~;
 #X obj 529 469 *~ 1;
 #X obj 942 297 * -1;
@@ -29,7 +29,7 @@
 #X obj 498 108 r transpose-\$1;
 #X obj 822 351 +~ 1;
 #X obj 805 325 *~ 0;
-#N canvas 8 60 1351 720 moog 0;
+#N canvas 8 60 1351 720 moog 1;
 #X obj 209 122 sig~ 3;
 #X obj 166 142 moog~;
 #X obj 104 56 inlet~;
@@ -39,7 +39,6 @@
 #X obj 396 171 switch~;
 #X msg 359 113 0;
 #X msg 500 136 1;
-#X obj 332 52 r loadbang-\$1;
 #X obj 442 52 r filttype-\$1;
 #X obj 464 85 sel 3;
 #X connect 0 0 1 2;
@@ -49,10 +48,9 @@
 #X connect 4 0 0 0;
 #X connect 7 0 6 0;
 #X connect 8 0 6 0;
-#X connect 9 0 7 0;
-#X connect 10 0 11 0;
-#X connect 11 0 8 0;
-#X connect 11 1 7 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
+#X connect 10 1 7 0;
 #X restore 530 513 pd moog;
 #N canvas 8 60 1351 720 vcf 0;
 #X obj 104 56 inlet~;
