@@ -6,15 +6,15 @@
         ["pct","speed-1","Speed 1",-300,300,100],
 	["float","vol-1","Volume 1",0,1,1],
 	["float","samp-1","Sample 1",0,1,1],
-        ["pct","speed-2","Speed 1",-300,300,100],
-	["float","vol-2","Volume 1",0,1,1],
-	["float","samp-2","Sample 1",0,1,1],
-        ["pct","speed-3","Speed 1",-300,300,100],
-	["float","vol-3","Volume 1",0,1,1],
-	["float","samp-3","Sample 1",0,1,1],
-        ["pct","speed-4","Speed 1",-300,300,100],
-	["float","vol-4","Volume 1",0,1,1],
-	["float","samp-4","Sample 1",0,1,1],
+        ["pct","speed-2","Speed 2",-300,300,100],
+	["float","vol-2","Volume 2",0,1,1],
+	["float","samp-2","Sample 2",0,1,1],
+        ["pct","speed-3","Speed 3",-300,300,100],
+	["float","vol-3","Volume 3",0,1,1],
+	["float","samp-3","Sample 3",0,1,1],
+        ["pct","speed-4","Speed 4",-300,300,100],
+	["float","vol-4","Volume 4",0,1,1],
+	["float","samp-4","Sample 4",0,1,1],
 	["bool","bounce","Bounce",0]
 
         
@@ -23,7 +23,7 @@
         ["pg_samp","Sample",["samp-1","samp-2","samp-3","samp-4"]],
         ["pg_vol","Speed",["vol-1","vol-2","vol-3","vol-4"]],
         ["pg_speed","Volume",["speed-1","speed-2","speed-3","speed-4"]],
-	["pg_setup","Seup",["Bounce"]]
+	["pg_setup","Setup",["Bounce"]]
     ]
 }
 
