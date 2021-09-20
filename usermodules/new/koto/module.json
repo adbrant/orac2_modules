@@ -1,0 +1,27 @@
+{
+    "name" : "koto",
+    "display" : "Koto",
+    "parameters" :  [ 
+    ["pct","damp","Damp",0,100,0],
+        ["float","cutoff","Cutoff",0,4000,1700],
+        ["float","fdetune","Detune",-50,50,0],
+    ["pct","fund","Fundamental",0,100,47],
+	    ["pct","subH","Sub Harmonic",0,100,62],
+        ["pct","firstH","1st Harmonic",0,100,36],
+        ["pct","secH","2nd Harmonic",0,100,100],
+    ["pct","combh1","Comb H1",0,100,12.5],
+	    ["pct","combh2","Comb H2",0,100,31.2],
+        ["pct","combh3","Comb H3",0,100,37.5],
+    ["pct","dattorro_predelay","Predelay",0,100,49.5],
+        ["pct","dattorro_bandwidth","Bandwidth",0,100,0.6],
+        ["pct","dattorro_damping","Damping",0,100,0.345],
+        ["pct","dattorro_gain","Gain",0,100,0.363]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["fdetune","cutoff","damp"]],
+        ["pg_harm","Harmonics",["fund","subH","firstH","secH"]],
+        ["pg_comb","Comb Filter",["combh1","combh2","combh3"]],
+        ["pg_dattorro","Dattoro Plate",["dattorro_predelay","dattorro_bandwidth","dattorro_damping","dattorro_gain"]]
+    ]
+}
+

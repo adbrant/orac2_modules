@@ -1,0 +1,13 @@
+{
+    "display" : "4wavefm",
+    "parameters" :  [
+        ["pct","fm_k1","Sine",0,100,50],
+        ["pct","fm_k2","Sine",0,100,24],
+        ["pct","fm_k3","Clipped Sine",0,100,10],
+        ["pct","fm_k4","Clipped Sine x2",0,100,10],
+        ["pitch","fm_t","Transpose",-24,24,0],
+	["pitch","fm_a","Algos",1,6,1]
+    ],
+    
+
+

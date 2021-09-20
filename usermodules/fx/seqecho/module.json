@@ -1,0 +1,29 @@
+{
+    "name" : "seqecho",
+    "display" : "seqecho",
+    "parameters" :  [ 
+        ["pct","feedback","Feedback",0,100,25],
+        ["pct","volume","Volume",0,100,50],
+        ["pct","dry","Dry",0,100,0],
+	["int","del_div","Delay Div ",1,4,1],
+        ["int","beat_div","Beat Div ",1,4,1],
+	["int","beat_s_0","Beat 1 Start ",0,16,0],
+	["int","beat_e_0","Beat 1 End ",0,16,0],
+	["int","beat_s_1","Beat 2 Start ",0,16,0],
+	["int","beat_e_1","Beat 2 End ",2,16,0],
+	["int","beat_s_2","Beat 3 Start ",2,16,0],
+	["int","beat_e_2","Beat 3 End ",1,16,0],
+	["int","beat_s_3","Beat 4 Start ",1,16,0],
+	["int","beat_e_3","Beat 4 End ",0,16,0],
+	["float","lopass","Filter",0,15000,3000],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["volume","dry""del_div","beat_div"]],
+	["pg_b12","1/2",["beat_s_0","beat_e_0","beat_s_1","beat_e_1"]],
+	["pg_b34","3/4",["beat_s_2","beat_e_2","beat_s_3","beat_e_3"]],
+	["pg_fb","Feedback",["feedback","lopass"]],
+
+    ]
+}
+

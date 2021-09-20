@@ -1,0 +1,15 @@
+{
+    "display" : "4wave",
+    "parameters" :  [
+	["pct","fw_k1","Sine",0,100,50],
+	["pct","fw_k2","Triangle",0,100,24],
+	["pct","fw_k3","Clip Sine",0,100,10],
+	["pct","fw_k4","Clip Sine x2",0,100,10],
+	["pitch","fw_t","Transpose",-24,24,0]
+    ],
+    "pages" : [
+        ["pg_main","Main",["fw_k1","fw_k2","fw_k3","fw_k4"]],
+	["pg_t","Transpose",["fw_t"]]
+    ]
+}
+
