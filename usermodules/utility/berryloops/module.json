@@ -23,7 +23,8 @@
 	["pct","filt-2","Filt 2",0,100,100],
 	["pct","filt-3","Filt 3",0,100,100],
 	["pct","filt-4","Filt 4",0,100,100],	
-	["bool","bounce","Bounce",0]
+	["bool","bounce","Bounce",0],
+	["int","speedinc","Spd. Increment",1,100,50]
         
     ],
     "pages" : [ 
@@ -32,7 +33,7 @@
         ["pg_vol","Vol",["vol-1","vol-2","vol-3","vol-4"]],
 	["pg_filt","Filt",["filt-1","filt-2","filt-3","filt-4"]],
 	["pg_pan","Pan",["pan-1","pan-2","pan-3","pan-4"]],
-	["pg_setup","Setup",["Bounce"]]
+	["pg_setup","Setup",["bounce","speedinc"]]
     ]
 }
 
