@@ -15,14 +15,23 @@
         ["pct","speed-4","Speed 4",-300,300,100],
 	["float","vol-4","Volume 4",0,1,1],
 	["float","samp-4","Sample 4",0,1,1],
+	["float","pan-1","Pan 1",-1,1,0],
+	["float","pan-2","Pan 2",-1,1,0],
+	["float","pan-3","Pan 3",-1,1,0],
+	["float","pan-4","Pan 4",-1,1,0],
+	["pct","filt-1","Filt 1",0,100,100],
+	["pct","filt-2","Filt 2",0,100,100],
+	["pct","filt-3","Filt 3",0,100,100],
+	["pct","filt-4","Filt 4",0,100,100],	
 	["bool","bounce","Bounce",0]
-
         
     ],
     "pages" : [ 
         ["pg_samp","Sample",["samp-1","samp-2","samp-3","samp-4"]],
-        ["pg_vol","Speed",["vol-1","vol-2","vol-3","vol-4"]],
-        ["pg_speed","Volume",["speed-1","speed-2","speed-3","speed-4"]],
+        ["pg_speed","Speed",["speed-1","speed-2","speed-3","speed-4"]],
+        ["pg_vol","Vol",["vol-1","vol-2","vol-3","vol-4"]],
+	["pg_filt","Filt",["filt-1","filt-2","filt-3","filt-4"]],
+	["pg_pan","Pan",["pan-1","pan-2","pan-3","pan-4"]],
 	["pg_setup","Setup",["Bounce"]]
     ]
 }
