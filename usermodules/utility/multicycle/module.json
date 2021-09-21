@@ -53,6 +53,7 @@
         ["int","mc_beats","Loop Len",0,64,4],
         ["int","mc_quantize","Quantize",0,4,0],
         ["bool","mc_overdub","Overdub",0],
+	["bool","midiclockin","Midi Clk in",1],
         ["int","mc_inchan","Midi In channel",-1,16,-1]       
     ],
     "pages" : [  
@@ -60,6 +61,7 @@
         ["pg_setup","Setup",["mc_quantize","mc_inchan","arm_mode"]],
         ["pg_tempo","Clock",["c_bpm","c_midiout","c_clickvol_l","c_clickvol_r"]],
         ["pg_swing","Swing",["swing8","swing16"]],
+	["pg_clock2","Clock 2",["midiclockin"]],
         ["pg_quant1","Quant.1",["mc_quant_0","mc_quant_1","mc_quant_2","mc_quant_3"]],
         ["pg_quant2","Quant.2",["mc_quant_4","mc_quant_5","mc_quant_6","mc_quant_7"]],
         ["pg_quant3","Quant.3",["mc_quant_8","mc_quant_9","mc_quant_10","mc_quant_11"]],
@@ -70,6 +72,7 @@
         ["pg_trans2","Trans.2",["mc_trans_4","mc_trans_5","mc_trans_6","mc_trans_7"]],
         ["pg_trans3","Trans.3",["mc_trans_8","mc_trans_9","mc_trans_10","mc_trans_11"]]
 
+		
     ]
 }
 
