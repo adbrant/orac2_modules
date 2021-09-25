@@ -28,6 +28,7 @@
 	["pct","filt-3","Filt 3",0,100,100],
 	["pct","filt-4","Filt 4",0,100,100],	
 	["bool","bounce","Bounce",0],
+	["bool","rec_in","Rec. Input",1],
 	["int","speedinc","Spd. Increment",1,100,50]
         
     ],
@@ -38,7 +39,7 @@
 	["pg_filt","Filt",["filt-1","filt-2","filt-3","filt-4"]],
 	["pg_pan","Pan",["pan-1","pan-2","pan-3","pan-4"]],
 	["pg_trans","Transpose",["trans-1","trans-2","trans-3","trans-4"]],
-	["pg_setup","Setup",["bounce","speedinc"]]
+	["pg_setup","Setup",["bounce","rec_in","speedinc"]]
     ]
 }
 
