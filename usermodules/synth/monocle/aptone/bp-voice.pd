@@ -7,10 +7,10 @@
 #X msg 351 718 1;
 #X msg 471 715 1;
 #X msg 213 712 1;
-#N canvas 7 50 727 452 triangle 1;
+#N canvas 7 50 727 452 triangle 0;
 #X obj 130 207 outlet~;
 #X obj 131 65 inlet~;
-#N canvas 318 101 779 606 triangle 1;
+#N canvas 318 101 779 606 triangle 0;
 #X obj 80 290 -~ 0.5;
 #X obj 228 290 -~ 0.5;
 #X obj 134 340 -~;

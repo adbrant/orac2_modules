@@ -1,4 +1,4 @@
-#N canvas 18 75 1351 719 10;
+#N canvas 0 56 1351 719 10;
 #X obj 272 14 inlet;
 #X obj 503 682 outlet~;
 #X obj 789 583 +~ 1;
@@ -245,6 +245,14 @@
 #X obj 630 131 *~ 5;
 #X obj 750 659 lop~ 5;
 #X obj 332 66 t b f;
+#X obj 171 490 r bp_wave-osc1-\$1;
+#X obj 289 708 s aux-label-\$1;
+#X obj 255 575 sel 0 1 2 3;
+#X msg 185 602 Osc: Sine;
+#X msg 252 618 Osc: Saw;
+#X obj 312 494 r bp_wave-osc2-\$1;
+#X msg 336 634 Osc: Sqr;
+#X msg 385 601 Osc: Tri;
 #X connect 0 0 5 0;
 #X connect 2 0 31 0;
 #X connect 3 0 1 0;
@@ -289,3 +297,13 @@
 #X connect 31 0 3 1;
 #X connect 32 0 5 0;
 #X connect 32 1 5 1;
+#X connect 33 0 35 0;
+#X connect 35 0 36 0;
+#X connect 35 1 37 0;
+#X connect 35 2 39 0;
+#X connect 35 3 40 0;
+#X connect 36 0 34 0;
+#X connect 37 0 34 0;
+#X connect 38 0 35 0;
+#X connect 39 0 34 0;
+#X connect 40 0 34 0;
