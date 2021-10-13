@@ -1,4 +1,4 @@
-#N canvas 16 4 1358 659 10;
+#N canvas 16 23 1358 659 10;
 #X obj 304 186 r notesIn-\$1;
 #X obj 304 671 s notesOut-\$1;
 #X obj 38 179 inlet~ inL-\$1;
@@ -9,7 +9,24 @@
 #X obj 423 208 r expIn-\$1;
 #X obj 456 225 r fsIn-\$1;
 #X obj 53 547 diffreverb \$1;
+#X obj 842 83 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 800 229 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 881 205 s aux-label-\$1;
+#X msg 882 174 L 1/4 notes: \$1;
+#X obj 825 168 + 0;
+#X obj 821 126 delcalc \$1;
+#X obj 844 52 r len_raw-\$1;
+#X obj 788 266 s len-\$1;
 #X connect 2 0 9 0;
 #X connect 3 0 9 1;
 #X connect 9 0 4 0;
 #X connect 9 1 5 0;
+#X connect 10 0 15 0;
+#X connect 11 0 17 0;
+#X connect 13 0 12 0;
+#X connect 14 0 11 0;
+#X connect 15 0 14 0;
+#X connect 15 1 13 0;
+#X connect 16 0 10 0;

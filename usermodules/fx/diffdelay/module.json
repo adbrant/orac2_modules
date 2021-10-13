@@ -5,16 +5,18 @@
         ["pct","decay","Decay",0,100,60],
         ["pct","volume","Volume",0,100,50],
         ["float","diffusion","Diffusion",0,1,0.75],
-        ["float","scale","Size",0.1,16,1],
+        ["int","len_raw","Length ",25,5000,500],
+        ["float","scale","Size",0.1,1,0.5],
         ["float","mod","Modulation",0,200,10],
         ["float","rand","Rand Mod",0,100,10],
         ["freq","lopass","high cut",100,15000,5000],
+	["float","spread","Spread",1,2,1.46],
         ["freq","hipass","lo cut",0,1000,100]
         
     ],
     "pages" : [ 
-        ["pg_main","Main",["decay","volume","scale"]],
-        ["pg_2","Pg 2",["mod","lopass","hipass"]]
+        ["pg_main","Main",["len_raw","decay","volume","diffusion"]],
+        ["pg_2","Pg 2",["scale","mod","lopass","hipass"]]
         
 
     ]
