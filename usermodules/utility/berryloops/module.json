@@ -26,7 +26,11 @@
 	["pct","filt-1","Filt 1",0,100,100],
 	["pct","filt-2","Filt 2",0,100,100],
 	["pct","filt-3","Filt 3",0,100,100],
-	["pct","filt-4","Filt 4",0,100,100],	
+	["pct","filt-4","Filt 4",0,100,100],
+	["bool","play-1","Play 1",0],
+	["bool","play-2","Play 2",0],
+	["bool","play-3","Play 3",0],
+	["bool","play-4","Play 4",0],
 	["bool","bounce","Bounce",0],
 	["bool","rec_in","Rec. Input",1],
 	["int","speedinc","Spd. Increment",1,100,50]
@@ -39,6 +43,7 @@
 	["pg_filt","Filt",["filt-1","filt-2","filt-3","filt-4"]],
 	["pg_pan","Pan",["pan-1","pan-2","pan-3","pan-4"]],
 	["pg_trans","Transpose",["trans-1","trans-2","trans-3","trans-4"]],
+	["pg_play","Play",["play-1","play-2","play-3","play-4"]],
 	["pg_setup","Setup",["bounce","rec_in","speedinc"]]
     ]
 }

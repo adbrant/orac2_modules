@@ -124,6 +124,25 @@
 #X floatatom 559 584 5 0 0 0 - - -;
 #X obj 580 513 * 1;
 #X obj 542 413 t b f;
+#X obj 139 321 r play-\$1-\$2;
+#X obj 145 361 sel 0 1;
+#N canvas 0 23 450 300 playparam 0;
+#X obj 132 221 s rackMsgs;
+#X obj 139 149 list append \$2;
+#X obj 130 118 list append \$1;
+#X msg 146 175 setparam \$3 play-\$2 \$1;
+#X msg 190 80 0;
+#X msg 108 86 1;
+#X obj 216 40 inlet;
+#X obj 111 32 inlet;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X restore 213 599 pd playparam;
 #X connect 0 0 30 0;
 #X connect 1 0 3 0;
 #X connect 1 1 2 0;
@@ -149,6 +168,7 @@
 #X connect 19 0 59 0;
 #X connect 21 0 26 0;
 #X connect 23 0 24 0;
+#X connect 23 0 122 1;
 #X connect 24 0 29 0;
 #X connect 25 0 20 0;
 #X connect 26 0 0 0;
@@ -176,6 +196,7 @@
 #X connect 39 0 37 0;
 #X connect 40 0 27 0;
 #X connect 40 0 53 0;
+#X connect 40 0 122 0;
 #X connect 41 0 83 0;
 #X connect 42 0 11 0;
 #X connect 43 0 1 0;
@@ -256,3 +277,6 @@
 #X connect 118 0 117 0;
 #X connect 119 0 92 0;
 #X connect 119 1 118 1;
+#X connect 120 0 121 0;
+#X connect 121 0 23 0;
+#X connect 121 1 34 0;
