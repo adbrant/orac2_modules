@@ -1,4 +1,4 @@
-#N canvas 255 23 1107 775 10;
+#N canvas 32 38 1107 775 10;
 #X declare -path cg-pd-library-local/sampling;
 #X declare -path cg-pd-library-local/sequencer;
 #X declare -path cg-pd-library-local/externals;
