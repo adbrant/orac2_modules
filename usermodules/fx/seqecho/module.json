@@ -19,11 +19,10 @@
         ["pct","thru_gain","Audio Thru Gain",0,100,0]
     ],
     "pages" : [ 
-        ["pg_main","Main",["volume","dry""del_div","beat_div"]],
+        ["pg_main","Main",["volume","dry","del_div","beat_div"]],
 	["pg_b12","1/2",["beat_s_0","beat_e_0","beat_s_1","beat_e_1"]],
 	["pg_b34","3/4",["beat_s_2","beat_e_2","beat_s_3","beat_e_3"]],
-	["pg_fb","Feedback",["feedback","lopass"]],
-
+	["pg_fb","Feedback",["feedback","lopass"]]
     ]
 }
 
