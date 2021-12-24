@@ -1,0 +1,27 @@
+{
+    "name" : "seqtrem",
+    "display" : "seqtrem",
+    "parameters" :  [ 
+        ["pct","feedback","Feedback",0,100,25],
+        ["pct","volume","Volume",0,100,50],
+        ["pct","dry","Dry",0,100,0],
+	["int","del_div","Delay Div ",1,4,1],
+        ["int","beat_div","Beat Div ",1,4,1],
+	["float","beat_0","Beat 1",0,1,1],
+	["float","beat_1","Beat 2",0,1,0],
+	["float","beat_2","Beat 3",0,1,1],
+	["float","beat_3","Beat 4",0,1,0],
+	["float","beat_4","Beat 5",0,1,1],
+	["float","beat_5","Beat 6",0,1,0],
+	["float","beat_6","Beat 7",0,1,1],
+	["float","beat_7","Beat 8",0,1,0],
+	["float","lopass","Filter",0,15000,3000],
+        ["pct","thru_gain","Audio Thru Gain",0,100,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["volume","dry","del_div","beat_div"]],
+	["pg_b12","1-4",["beat_0","beat_1","beat_2","beat_3"]],
+	["pg_b34","5-8",["beat_4","beat_5","beat_6","beat_7"]]
+    ]
+}
+
