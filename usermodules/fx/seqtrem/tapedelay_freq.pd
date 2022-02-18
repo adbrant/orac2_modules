@@ -44,7 +44,7 @@
 #X msg 902 127 8;
 #X obj 839 344 * 1;
 #X obj 940 324 * 1;
-#X obj 964 222 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 983 232 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 12700 1;
 #X obj 644 343 pipe;
 #X obj 614 277 % 8;
@@ -57,6 +57,10 @@
 #X obj 805 293 + 1;
 #X obj 795 254 t b f;
 #X floatatom 755 339 5 0 0 0 - - -;
+#X obj 931 90 r timing_offset-\$1;
+#X obj 1061 173 r ramp_time-\$1;
+#X obj 687 555 +~ 0;
+#X obj 688 516 *~ 1;
 #X connect 1 0 20 0;
 #X connect 1 0 25 0;
 #X connect 2 0 21 0;
@@ -116,3 +120,5 @@
 #X connect 49 0 47 0;
 #X connect 49 1 48 0;
 #X connect 50 0 41 1;
+#X connect 51 0 45 0;
+#X connect 52 0 40 0;
