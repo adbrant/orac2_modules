@@ -1,15 +1,14 @@
 {
-    "name" : "stereodelay",
-    "display" : "stereodelay",
+    "name" : "loopdelay",
+    "display" : "loopdelay",
     "parameters" :  [ 
         ["pct","feedback","Feedback",0,100,25],
         ["pct","volume","Volume",0,100,50],
-        ["int","len_raw_l","Delay L",25,12000,500],
-        ["int","len_raw_r","Delay R ",25,12000,500],
-        
+        ["pct","input","Input",0,100,100],
+        ["int","len_raw_l","Delay",25,12000,500],
+        ["int","len_raw_r","Delay R ",25,12000,500],   
         ["int","temposync","Tempo Sync",0,1,0],
         ["int","mode","Mode",0,3,0],
-        
         ["float","lopass","High Cut",0,20000,12000],
         ["float","hipass","Low Cut",0,3000,10],
         ["int","len_fine_l","Delay L Fine",-100,100,0],
@@ -18,9 +17,8 @@
         
     ],
     "pages" : [ 
-        ["pg_main","Main",["feedback","volume","len_raw_l","len_raw_r"]],
-        ["pg_2","Pg 2",["temposync","mode","lopass", "hipass"]],
-        ["pg_mod","Pg 3",["len_fine_l","len_fine_r"]]
+        ["pg_main","Main",["feedback","volume","len_raw_l","input"]],
+        ["pg_2","Pg 2",["temposync","lopass", "hipass"]]
 
     ]
 }
