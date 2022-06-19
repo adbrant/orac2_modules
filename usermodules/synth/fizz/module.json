@@ -1,0 +1,17 @@
+{
+    "name" : "fizz",
+    "display" : "Fizz Synth",
+    "parameters" :  [ 
+        ["pitch","trans","Transpose",-24,24,0],
+        ["time","decay","Decay Time",5,2000,5],
+        ["time","attack","Attack Time",5,2000,5],
+        ["float","tone","Tone",0,100,50],
+        ["freq","vrate","Vibr Rate",0.01,8,1],
+        ["pct","vdepth","Vibr Depth",0,20,0]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["trans","tone","attack","decay"]],
+        ["pg_mod","Mod",["vrate","vdepth"]]
+    ]
+}
+

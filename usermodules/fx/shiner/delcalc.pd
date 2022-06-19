@@ -1,0 +1,72 @@
+#N canvas -8 -8 1366 725 10;
+#X obj 210 221 t b n;
+#X obj 212 273 /;
+#X obj 202 296 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 206 322 * 1000;
+#X obj 175 162 r master-bpm;
+#X obj 229 382 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X floatatom 332 230 5 0 0 0 - - -;
+#X obj 359 149 hsl 128 15 0 5000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 313 296 / 1;
+#X obj 322 343 int;
+#X obj 346 398 * 1;
+#X obj 324 485 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 348 363 max 1;
+#X obj 388 333 spigot 1;
+#X obj 316 272 spigot 0;
+#X obj 215 190 t b n;
+#X obj 455 271 == 0;
+#X obj 433 233 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 403 386 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 424 188 r temposync-\$1;
+#X obj 293 168 / 1;
+#X obj 283 138 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 344 533 / 1;
+#X obj 375 585 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 0 256;
+#X obj 392 248 t b f;
+#X msg 209 244 15;
+#X obj 272 56 inlet;
+#X obj 371 627 outlet;
+#X obj 490 573 outlet;
+#X connect 0 0 25 0;
+#X connect 0 1 1 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 15 0;
+#X connect 5 0 8 1;
+#X connect 5 0 10 1;
+#X connect 6 0 14 0;
+#X connect 6 0 13 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 12 0;
+#X connect 10 0 11 0;
+#X connect 11 0 22 0;
+#X connect 12 0 10 0;
+#X connect 12 0 18 0;
+#X connect 13 0 11 0;
+#X connect 14 0 8 0;
+#X connect 15 0 6 0;
+#X connect 15 1 0 0;
+#X connect 16 0 13 1;
+#X connect 17 0 24 0;
+#X connect 18 0 28 0;
+#X connect 19 0 24 0;
+#X connect 20 0 6 0;
+#X connect 21 0 20 0;
+#X connect 22 0 23 0;
+#X connect 23 0 27 0;
+#X connect 24 0 6 0;
+#X connect 24 1 16 0;
+#X connect 24 1 14 1;
+#X connect 25 0 1 0;
+#X connect 26 0 21 0;

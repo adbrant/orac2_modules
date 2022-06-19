@@ -1,0 +1,11 @@
+#N canvas 0 23 1366 725 10;
+#X obj 238 39 inlet~;
+#X obj 283 611 outlet~;
+#X obj 403 481 +~;
+#X obj 529 814;
+#X obj 536 204 apdelay_inner \$1 \$2;
+#X obj 641 86 inlet;
+#X connect 0 0 4 0;
+#X connect 2 0 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 4 1;
