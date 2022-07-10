@@ -828,3 +828,4 @@ use internal or MIDI clock if present.;
 #X connect 81 0 73 0;
 #X connect 81 1 74 0;
 #X connect 82 0 83 0;
+#X connect 83 0 84 0;
