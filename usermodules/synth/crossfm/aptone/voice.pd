@@ -1,4 +1,4 @@
-#N canvas 81 162 1351 720 10;
+#N canvas 81 67 1351 720 10;
 #X text 451 49 note messages;
 #X obj 405 65 inlet;
 #X obj 536 609 outlet~;
@@ -6,13 +6,13 @@
 #X obj 428 86 unpack 0 0;
 #X obj 438 195 / 2;
 #X obj 750 138 osc~ 5;
-#X obj 511 217 sig~;
+#X obj 392 258 sig~;
 #X obj 639 233 *~ 0.1;
 #X obj 575 165 * 0.001;
 #X obj 684 385 +~ 1;
 #X obj 649 344 *~ 0.1;
 #X obj 666 53 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 2.83784 256;
 #X obj 764 382 *~;
 #X obj 942 297 * -1;
 #X obj 941 322 + 1;
@@ -33,7 +33,7 @@
 #X obj 74 178 - 1;
 #X obj 60 205 * -1;
 #X obj 61 228 sig~ 1;
-#X obj 526 326 *~;
+#X obj 486 369 *~;
 #X obj 87 150 * 1;
 #X obj 100 117 f 0;
 #X obj 567 531 env/env_parabolic \$1;
@@ -54,6 +54,8 @@
 #X obj 456 468 psosc;
 #X obj 523 561 *~;
 #X obj 800 40 inlet~;
+#X obj 369 328 vline~;
+#X msg 339 259 \$1 10;
 #X connect 1 0 4 0;
 #X connect 4 0 16 0;
 #X connect 4 1 37 0;
@@ -61,10 +63,10 @@
 #X connect 4 1 36 0;
 #X connect 5 0 7 0;
 #X connect 5 0 13 1;
+#X connect 5 0 55 0;
 #X connect 6 0 8 0;
 #X connect 6 0 11 0;
 #X connect 6 0 42 0;
-#X connect 7 0 33 0;
 #X connect 8 0 44 0;
 #X connect 9 0 8 1;
 #X connect 11 0 10 0;
@@ -111,3 +113,5 @@
 #X connect 51 0 52 0;
 #X connect 52 0 2 0;
 #X connect 53 0 51 1;
+#X connect 54 0 33 0;
+#X connect 55 0 54 0;
