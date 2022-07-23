@@ -1,0 +1,86 @@
+#N canvas 625 130 1360 725 10;
+#X obj 304 186 r notesIn-\$1;
+#X obj 304 491 s notesOut-\$1;
+#X obj 25 186 inlet~ inL-\$1;
+#X obj 135 186 inlet~ inR-\$1;
+#X obj 27 491 outlet~ outL-\$1;
+#X obj 136 491 outlet~ outR-\$1;
+#X obj 424 185 r auxIn-\$1;
+#X obj 423 208 r expIn-\$1;
+#X obj 423 233 r fsIn-\$1;
+#X obj 222 407 aptone/aptone \$1;
+#X obj 180 250 *~ 0.5;
+#X obj 465 267 sel 1;
+#N canvas 337 107 886 691 latch 0;
+#X obj 43 371 latch-notes;
+#X obj 263 200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 264 246 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 171 374 spigot 1;
+#X obj 43 298 spigot 0;
+#X obj 216 311 == 0;
+#X obj 130 335 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 269 172 t b b, f 7;
+#X obj 262 106 inlet;
+#X obj 43 626 outlet;
+#X obj 43 106 inlet;
+#X text 389 95 bang enable / disables latch;
+#X text 44 53 incoming notes get sent through latch if enabled \, or
+directly to output if disabled;
+#X obj 611 123 inlet;
+#X msg 246 380 Latch on;
+#X msg 383 363 Latch off;
+#X obj 322 265 sel 1;
+#X obj 596 199 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 629 259 == 0;
+#X obj 627 321 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 289 144 spigot 1;
+#X obj 436 139 spigot 0;
+#X obj 325 437 s aux-label-\$1;
+#X connect 0 0 9 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 2 0 4 1;
+#X connect 2 0 16 0;
+#X connect 3 0 9 0;
+#X connect 4 0 0 0;
+#X connect 5 0 3 1;
+#X connect 6 0 0 1;
+#X connect 7 0 1 0;
+#X connect 7 1 6 0;
+#X connect 8 0 20 0;
+#X connect 8 0 21 0;
+#X connect 10 0 4 0;
+#X connect 10 0 3 0;
+#X connect 13 0 17 0;
+#X connect 13 0 21 1;
+#X connect 14 0 22 0;
+#X connect 15 0 22 0;
+#X connect 16 0 14 0;
+#X connect 16 1 15 0;
+#X connect 17 0 18 0;
+#X connect 17 0 2 0;
+#X connect 18 0 19 0;
+#X connect 18 0 6 0;
+#X connect 19 0 20 1;
+#X connect 20 0 7 0;
+#X connect 21 0 6 0;
+#X restore 309 333 pd latch;
+#X obj 435 301 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 574 241 r latch-\$1;
+#X connect 0 0 12 0;
+#X connect 2 0 10 0;
+#X connect 3 0 10 0;
+#X connect 6 0 11 0;
+#X connect 9 0 5 0;
+#X connect 9 0 4 0;
+#X connect 10 0 9 1;
+#X connect 11 0 12 1;
+#X connect 12 0 9 0;
+#X connect 13 0 12 2;
+#X connect 14 0 12 2;

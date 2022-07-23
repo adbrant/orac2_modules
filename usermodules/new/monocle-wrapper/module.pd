@@ -1,4 +1,4 @@
-#N canvas 633 196 485 513 10;
+#N canvas 630 206 485 513 10;
 #X obj 33 30 r loadbang-\$1;
 #X obj 117 217 outlet~ outL-\$1;
 #X obj 219 217 outlet~ outR-\$1;
@@ -7,7 +7,7 @@
 #X obj 301 55 s notesOut-\$1;
 #X obj 377 30 s ctrlOut-\$1;
 #X text 194 173 Pd~ subprocess;
-#N canvas 267 61 1007 676 subparams 1;
+#N canvas 267 61 1007 676 subparams 0;
 #X obj 443 636 outlet;
 #X obj 62 380 r notesIn-\$1;
 #X obj 640 458 r ctrlIn-\$1;
@@ -60,6 +60,8 @@
 #X obj 205 70 params \$1;
 #X text 49 108 default inputs;
 #X text 199 92 module specific params;
+#X obj 212 1 r loadbang-\$1;
+#X obj 145 31 delay 1000;
 #X connect 0 0 13 0;
 #X connect 8 0 12 0;
 #X connect 10 0 12 0;
@@ -69,3 +71,6 @@
 #X connect 12 2 2 0;
 #X connect 13 0 12 0;
 #X connect 14 0 12 0;
+#X connect 17 0 14 0;
+#X connect 17 0 18 0;
+#X connect 18 0 14 0;

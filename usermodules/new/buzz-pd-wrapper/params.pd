@@ -1,0 +1,14 @@
+#N canvas 0 25 1034 552 12;
+#X obj 280 268 outlet;
+#X obj 109 22 r trans-\$1;
+#X msg 109 42 trans-pd \$1;
+#X obj 109 62 r decay-\$1;
+#X msg 109 82 decay-pd \$1;
+#X obj 109 102 r tone-\$1;
+#X msg 109 122 tone-pd \$1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
