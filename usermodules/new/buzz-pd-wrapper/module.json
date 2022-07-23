@@ -1,0 +1,13 @@
+{
+    "name" : "buzz",
+    "display" : "Buzz Synth",
+    "parameters" :  [ 
+        ["pitch","trans","Transpose",-24,24,0],
+        ["time","decay","Decay Time",5,2000,5],
+        ["float","tone","Tone",0,100,50]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["trans","tone","decay"]]
+    ]
+}
+
