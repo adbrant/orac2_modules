@@ -56,13 +56,13 @@
 #X obj 61 126 inlet~ inL-\$1;
 #X obj 172 138 inlet~ inR-\$1;
 #X obj 33 175 pd~ -ninsig 2 -noutsig 2;
-#X msg 33 68 pd~ start wrapper.pd;
 #X obj 205 70 params \$1;
 #X text 49 108 default inputs;
 #X text 199 92 module specific params;
 #X obj 212 1 r loadbang-\$1;
 #X obj 145 31 delay 1000;
-#X connect 0 0 13 0;
+#X msg 33 68 pd~ start -nogui wrapper.pd;
+#X connect 0 0 18 0;
 #X connect 8 0 12 0;
 #X connect 10 0 12 0;
 #X connect 11 0 12 1;
@@ -70,7 +70,7 @@
 #X connect 12 1 1 0;
 #X connect 12 2 2 0;
 #X connect 13 0 12 0;
-#X connect 14 0 12 0;
-#X connect 17 0 14 0;
-#X connect 17 0 18 0;
-#X connect 18 0 14 0;
+#X connect 16 0 13 0;
+#X connect 16 0 17 0;
+#X connect 17 0 13 0;
+#X connect 18 0 12 0;
