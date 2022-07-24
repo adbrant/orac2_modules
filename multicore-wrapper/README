@@ -1,0 +1,10 @@
+Wrapper for ORAC modules for offloading processing to new pd~ process
+
+Process for porting modules:
+- Copy the single threaded module into the /module subfolder.
+- Replace module.json in the main folder with the one from the original module
+- Run ‘python wrapper.py’, and replace params.pd with the newly generated params.new.pd (I think the 	python on the organelle will work)
+
+Does not currently support:
+- Graphics
+- Modules that output notes
