@@ -29,6 +29,10 @@
 #X obj 281 160 r expIn-\$1;
 #X msg 440 458 loadbang-pd \$1;
 #X obj 556 401 delay 1000;
+#X obj 409 166 r master-ticks;
+#X obj 546 176 r master-bpm;
+#X msg 402 201 master-ticks \$1;
+#X msg 571 216 master-bpm \$1;
 #X connect 1 0 12 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 0;
@@ -54,6 +58,10 @@
 #X connect 18 0 17 0;
 #X connect 19 0 0 0;
 #X connect 20 0 19 0;
+#X connect 21 0 23 0;
+#X connect 22 0 24 0;
+#X connect 23 0 0 0;
+#X connect 24 0 0 0;
 #X restore 49 90 pd subparams;
 #X obj 19 217 s aux-label-\$1;
 #X obj 61 126 inlet~ inL-\$1;

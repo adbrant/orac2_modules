@@ -11,12 +11,12 @@
 #X obj 396 434 stdout;
 #X obj 191 324 module/module pd;
 #X obj 374 346 s notesIn-pd;
-#X obj 402 399 r auxLabel-pd;
 #X obj 525 118 pack 0 0 0;
 #X obj 506 65 r valuem;
 #X obj 582 62 r controllerm;
 #X obj 634 98 r channelm;
 #X obj 524 145 s ctrlIn-pd;
+#X obj 402 399 r aux-label-pd;
 #X connect 1 0 0 0;
 #X connect 2 0 10 0;
 #X connect 2 1 10 1;
@@ -26,8 +26,8 @@
 #X connect 7 0 11 0;
 #X connect 10 0 3 0;
 #X connect 10 1 3 1;
-#X connect 12 0 9 0;
-#X connect 13 0 17 0;
-#X connect 14 0 13 0;
-#X connect 15 0 13 1;
-#X connect 16 0 13 2;
+#X connect 12 0 16 0;
+#X connect 13 0 12 0;
+#X connect 14 0 12 1;
+#X connect 15 0 12 2;
+#X connect 17 0 9 0;
