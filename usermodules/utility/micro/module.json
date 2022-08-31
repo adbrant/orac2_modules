@@ -2,10 +2,19 @@
     "name" : "U-micro",
     "display" : "microtuner",
     "parameters" :  [ 
-        ["int","microtuning","Tuning",0,16,0]	
+        ["int","microtuning","Tuning",0,16,0],
+        ["int","mult1","Mult 1",1,16,1],
+        ["int","div1","Div 1",1,16,1],
+	["int","vel1","Velocity 1",0,100,0],
+        ["int","mult2","Mult 2",1,16,1],
+        ["int","div2","Div 2",1,16,1],
+	["int","vel2","Velocity 2",0,100,0]
     ],
     "pages" : [ 
-        ["pg_micro", "Microtuning", ["microtuning"]]
+        ["pg_micro", "Microtune", ["microtuning"]],
+	["pg_harm1", "Harmonic 1", ["mult1","div1","vel1"]],
+	["pg_harm2", "Harmonic 2", ["mult2","div2","vel2"]]
+
     ]
 }
 
