@@ -1,0 +1,8 @@
+Wrapper for ORAC modules for standalone use
+Process for porting modules:
+- Replace module.json in the main folder with the one from the original module
+- Run ‘python wrapper.py’, and put params.new.pd and wrapper.pd in the module folder, and open wrapper.pd for standalone use
+
+Does not currently support:
+- Graphics
+- Modules that output notes
