@@ -1,4 +1,4 @@
-#N canvas 80 130 733 584 10;
+#N canvas 676 0 667 669 10;
 #X msg 333 149 \; pd dsp 1;
 #X obj 344 101 loadbang;
 #X obj 180 219 adc~;
@@ -6,14 +6,17 @@
 #X obj 402 399 r aux-label-pd;
 #X obj 192 421 *~ 0.1;
 #X obj 247 431 *~ 0.1;
-#X obj 237 368 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11900 1;
-#X floatatom 275 197 5 0 0 0 - - -;
+#X obj 237 368 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X floatatom 275 197 5 0 0 0 - - - 0;
 #X obj 277 229 s master-bpm;
 #X obj 400 212 s loadbang-pd;
 #X obj 396 434 print;
 #X obj 414 313 params.new;
 #X obj 191 324 module pd;
+#X obj 188 140 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 188 160 s auxIn-pd;
 #X connect 1 0 0 0;
 #X connect 1 0 10 0;
 #X connect 2 0 13 0;
@@ -26,3 +29,4 @@
 #X connect 8 0 9 0;
 #X connect 13 0 5 0;
 #X connect 13 1 6 0;
+#X connect 14 0 15 0;
