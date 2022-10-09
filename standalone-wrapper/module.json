@@ -16,15 +16,17 @@
         ["float","lopass","High Cut",0,15000,8000],
         ["float","hipass","Low Cut",0,3000,100],
         ["int","len_fine_l","Delay L Fine",-100,100,0],
-        ["int","len_fine_r","Delay R Fine",-100,100,0]
-
+        ["int","len_fine_r","Delay R Fine",-100,100,0],
+	["pct","shiftvol","Shift Vol",0,100,0],
+	["int","shiftpitch","Shift Pitch",-24,24,12]
         
     ],
     "pages" : [ 
         ["pg_main","Main",["feedback","input","len_raw_l","len_raw_r"]],
         ["pg_2","Pg 2",["temposync","crossfeed","lopass", "hipass"]],
         ["pg_3","Pg 3",["len_fine_l","len_fine_r","volume"]],
-        ["pg_mod","Mod",["speed","depth" ]]
+        ["pg_mod","Mod",["speed","depth" ]],
+	["pg_shift","Shift Heads",["shiftvol","shiftpitch" ]]
 
     ]
 }
