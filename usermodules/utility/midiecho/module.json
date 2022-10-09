@@ -1,0 +1,18 @@
+{
+    "name" : "midiecho",
+    "display" : "midi echo",
+    "parameters" :  [ 
+        ["pct","feedback","Feedback",0,100,50],
+        ["int","len_raw","Length ",25,2500,500],
+        ["int","temposync","Tempo Sync",0,1,0],
+        ["int","semi","Semitones",-12,12,0],
+        ["int","cent","Cents",-100,100,0],
+	["int","notelen","Note Len",1,2500,500],
+	["int","max","Max Echos",1,64,8]
+    ],
+    "pages" : [ 
+   	["pg_main","Main",["feedback","len_raw","semi","cent"]],
+        ["pg_2","Page 2",["temposync","notelen","max"]]
+    ]
+}
+
